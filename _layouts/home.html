@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <!-- Replace the gradient with a real photo URL via page front matter: hero_image: /assets/images/hero.jpg -->
+  <div class="hero-image"{% if page.hero_image %} style="background-image: url('{{ page.hero_image | relative_url }}')"{% endif %}></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Professional Home Staging &amp; Styling</p>
+    <h1>{{ page.tagline | default: "Transform your space. Elevate your sale." }}</h1>
+    <p class="hero-subtitle">{{ page.subtitle | default: "Expert home staging and styling services to help your property sell faster and for more." }}</p>
+    <div class="hero-buttons">
+      <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
+      <a href="{{ '/portfolio/' | relative_url }}" class="hero-btn hero-btn--outline">View our work</a>
+    </div>
+  </div>
+</section>
+
+{{ content }}
+
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-number">73%</div>
+        <div class="stat-label">faster sale compared to unstaged properties</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">+15%</div>
+        <div class="stat-label">higher achieved sale price on average</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">of clients would recommend Sea Glass</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <div class="services-intro">
+      <h2>What I Offer</h2>
+      <p>From occupied home staging to vacant property styling, I help you present your home at its very best.</p>
+    </div>
+    <div class="services-grid">
+      <div class="services-card">
+        <h3>Home Staging</h3>
+        <p>Strategic styling of your existing space to maximise buyer appeal and help you achieve the best possible sale price.</p>
+      </div>
+      <div class="services-card">
+        <h3>Styling Consultation</h3>
+        <p>A focused one-to-one session walking through your property with tailored advice on presentation and what buyers want to see.</p>
+      </div>
+      <div class="services-card">
+        <h3>Vacant Property</h3>
+        <p>Full furnishing and styling of empty properties so buyers can truly visualise the space and fall in love with it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-preview">
+  <div class="container">
+    <div class="section-intro">
+      <h2>Recent Projects</h2>
+      <p>A selection of homes I've helped to style and sell.</p>
+    </div>
+    <div class="portfolio-grid">
+      {% for post in site.posts limit:3 %}
+      <article class="portfolio-card">
+        <a href="{{ post.url | relative_url }}">
+          <div class="portfolio-card-image {% unless post.main_image %}no-image{% endunless %}">
+            {% if post.main_image %}
+              <img src="{{ post.main_image | relative_url }}" alt="{{ post.title }}">
+            {% else %}
+              <span>&#127968;</span>
+            {% endif %}
+          </div>
+          <div class="portfolio-card-body">
+            <h3>{{ post.title }}</h3>
+            <div class="card-meta">
+              {% if post.location %}<span>{{ post.location }}</span>{% endif %}
+              <span>{{ post.date | date: "%B %Y" }}</span>
+            </div>
+            <p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+    {% if site.posts.size > 0 %}
+    <div class="view-all">
+      <a href="{{ '/portfolio/' | relative_url }}" class="btn-outline">View all projects</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to get started?</h2>
+    <p>Get in touch for a free initial conversation.</p>
+    <a href="tel:{{ site.phone | remove: ' ' }}" class="phone-link">{{ site.phone }}</a>
+  </div>
+</section>

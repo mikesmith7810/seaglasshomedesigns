@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="post-hero" {% if page.main_image %}style="background-image: url('{{ page.main_image | relative_url }}')"{% endif %}>
+  <div class="post-hero-overlay">
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="post-meta-bar">
+  <div class="container">
+    <div class="meta-inner">
+      {% if page.location %}
+      <span class="meta-item">Location: <strong>{{ page.location }}</strong></span>
+      {% endif %}
+      <span class="meta-item">Date: <strong>{{ page.date | date: "%B %Y" }}</strong></span>
+      {% if page.property_type %}
+      <span class="meta-item">Property: <strong>{{ page.property_type }}</strong></span>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="post-body">
+  {{ content }}
+</div>
+
+{% if page.images %}
+<div class="post-gallery">
+  <div class="container">
+    <h2>Project Gallery</h2>
+    <div class="post-gallery-grid">
+      {% for image in page.images %}
+      <img src="{{ image | relative_url }}" alt="{{ page.title }} — photo {{ forloop.index }}">
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="post-back container">
+  <a href="{{ '/portfolio/' | relative_url }}">Back to Portfolio</a>
+</div>

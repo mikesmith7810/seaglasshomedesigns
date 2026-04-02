@@ -1,3 +1,12 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: Sea Glass Home Styling
+email: hello@seaglasshomestyling.co.uk
+phone: "01234 567890"
+description: "Professional home staging and styling services to help your property sell faster and for more."
+instagram_username: seaglashhomestyling
+facebook_username: seaglashhomestyling
+
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-feed

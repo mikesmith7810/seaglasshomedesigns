@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<div class="about-banner">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+  </div>
+</div>
+
+<section class="hs-intro">
+  <div class="container hs-intro-grid">
+    <div class="hs-intro-text">
+      {{ content }}
+    </div>
+    <div class="hs-intro-photos">
+      {% if page.photo_1 %}
+      <img src="{{ page.photo_1 | relative_url }}" alt="Home staging example">
+      {% endif %}
+      {% if page.photo_2 %}
+      <img src="{{ page.photo_2 | relative_url }}" alt="Home staging example">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="hs-stats">
+  <div class="container">
+
+    <div class="hs-stat-block">
+      <h2>1. The Impact on Sale Price</h2>
+      <p class="hs-stat-intro">Is it worth the money? These statistics prove that it is.</p>
+      <ul class="hs-fact-list">
+        <li><strong>Up to 10&times; Return on Investment</strong> — Industry surveys from the Home Staging Association (HSA) UK estimate that a professional staging investment can deliver a return of 800% to 1,000%. Every £1 spent on staging can return up to £10 in the final sale price.</li>
+        <li><strong>8%&ndash;10% Price Increase</strong> — Staged homes consistently sell for more. Data suggests that properly staged homes sell for 8% to 10% more than unstaged counterparts. On a £300,000 property, that is an extra £24,000 to £30,000.</li>
+        <li><strong>Low Initial Investment</strong> — Staging typically costs between 0.5% and 1.5% of a property's guide price — a small fraction of the potential 8% to 10% increase in value.</li>
+        <li><strong>Avoiding Price Reductions</strong> — The average first price reduction on an unstaged UK property is often 3% to 5%. Professional staging before listing can help avoid this costly reduction entirely.</li>
+      </ul>
+    </div>
+
+    <div class="hs-stat-block">
+      <h2>2. The Impact on Time on Market</h2>
+      <p class="hs-stat-intro">Staging reduces the disruption of prolonged listings and helps sellers get their lives back sooner.</p>
+      <ul class="hs-fact-list">
+        <li><strong>3&times; Faster Sales</strong> — Research from the Home Staging Association UK indicates that staged properties can sell up to three times faster than those that are unstaged.</li>
+        <li><strong>73% Reduction in Listing Time</strong> — Professionally staged properties spend an average of 73% less time on the market, translating to significant savings on mortgage payments, utilities, and council tax.</li>
+        <li><strong>Faster Than Price Reductions</strong> — Homes listed unstaged and unsold averaged 143 days on the market. Once staged, they sold in an average of just 40 days. For homes staged before listing, the average was only 23 days.</li>
+      </ul>
+    </div>
+
+    <div class="hs-stat-block">
+      <h2>3. The Psychology of the Buyer</h2>
+      <p class="hs-stat-intro">These numbers explain <em>why</em> staging works — bridging the gap between a house and a home.</p>
+      <ul class="hs-fact-list">
+        <li><strong>83% of Buyers Can Visualise Better</strong> — 83% of buyers' agents say that staging makes it easier for clients to envision a property as their future home, especially for empty spaces.</li>
+        <li><strong>31% More Walk-Throughs</strong> — Your first showing is online. Staging increases a property's digital appeal, with 31% of buyers more willing to schedule a viewing after seeing a staged home online.</li>
+        <li><strong>10% More Online Views</strong> — A well-staged home can receive up to 10% more views online than a cluttered or vacant listing.</li>
+        <li><strong>75% of Buyers Linger Longer</strong> — Surveys suggest that 75% of buyers spend more time viewing a home that has been staged — giving them time to fall in love with it.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="hs-compare">
+  <div class="container">
+    <h2>Don't List Without It: The Staging Difference</h2>
+    <div class="hs-compare-grid">
+      <div class="hs-compare-card hs-compare-card--unstaged">
+        <h3>Unstaged Home</h3>
+        <ul>
+          <li><span class="hs-compare-label">Average time on market</span> 143 days</li>
+          <li><span class="hs-compare-label">Final offers</span> 90–95% of asking price</li>
+          <li><span class="hs-compare-label">Outcome</span> High risk of 3–5% price reduction</li>
+        </ul>
+      </div>
+      <div class="hs-compare-card hs-compare-card--staged">
+        <h3>Staged by Sea Glass</h3>
+        <ul>
+          <li><span class="hs-compare-label">Average time on market</span> 23 days</li>
+          <li><span class="hs-compare-label">Final offers</span> 100–110% of asking price</li>
+          <li><span class="hs-compare-label">Outcome</span> Potential £15,000–£30,000 extra profit on a £300k home</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hs-disclaimer">
+  <div class="container">
+    <p>* Based on average data from the National Association of REALTORS&reg; (NAR) and the Home Staging Association (HSA) UK. Actual results vary by property and current market conditions.</p>
+  </div>
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to see what staging can do for your property?</h2>
+    <p>Get in touch for a free, no-obligation conversation.</p>
+    <a href="{{ '/contact/' | relative_url }}" class="hero-btn hero-btn--primary" style="display:inline-block; margin-top: 0.5rem;">Contact Us</a>
+  </div>
+</section>

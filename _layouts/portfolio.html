@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="portfolio-header">
+  <div class="container">
+    <h1>{{ page.title | default: "Portfolio" }}</h1>
+    <p>{{ page.description | default: "A selection of recent home staging and styling projects." }}</p>
+  </div>
+</div>
+
+<div class="container">
+  {% if site.posts.size > 0 %}
+  <div class="portfolio-grid">
+    {% for post in site.posts %}
+    <article class="portfolio-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="portfolio-card-image {% unless post.main_image %}no-image{% endunless %}">
+          {% if post.main_image %}
+            <img src="{{ post.main_image | relative_url }}" alt="{{ post.title }}">
+          {% else %}
+            <span>&#127968;</span>
+          {% endif %}
+        </div>
+        <div class="portfolio-card-body">
+          <h2>{{ post.title }}</h2>
+          <div class="card-meta">
+            {% if post.location %}<span>{{ post.location }}</span>{% endif %}
+            <span>{{ post.date | date: "%B %Y" }}</span>
+            {% if post.property_type %}<span>{{ post.property_type }}</span>{% endif %}
+          </div>
+          <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>Projects coming soon.</p>
+  </div>
+  {% endif %}
+</div>

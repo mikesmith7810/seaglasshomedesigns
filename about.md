@@ -6,7 +6,7 @@ permalink: /about/
 # photo: /assets/images/profile.jpg
 ---
 
-## Hello, I'm [Your Name]
+## Hello, I'm Cathy
 
 I'm a professional home stager and interior stylist passionate about helping homeowners and estate agents present properties at their absolute best.
 

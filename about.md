@@ -3,7 +3,7 @@ layout: about
 title: About Me
 subtitle: Sea Glass Home Styling
 permalink: /about/
-# photo: /assets/images/profile.jpg
+photo: /assets/images/cathyaboutme1can we make the .jpg
 ---
 
 ## Hello, I'm Cathy

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/mikesmith/code/personal/cathysmithdesigns checkout -b readme-updates)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(git -C /Users/mikesmith/code/personal/happytoucandesign log --oneline)",
+      "Bash(wc:*)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(bundle exec jekyll build:*)",
+      "WebFetch(domain:www.createpropertystaging.com)",
+      "WebSearch",
+      "Bash(git stash:*)",
+      "Bash(git stash pop:*)"
+    ]
+  }
+}

@@ -3,9 +3,7 @@ layout: default
 ---
 
 <section class="hero">
-  <!-- Replace the gradient with a real photo URL via page front matter: hero_image: /assets/images/hero.jpg -->
-  <div class="hero-image"{% if page.hero_image %} style="background-image: url('{{ page.hero_image | relative_url }}')"{% endif %}></div>
-  <div class="hero-content">
+  <div class="hero-text">
     <p class="hero-eyebrow">Professional Home Staging &amp; Styling</p>
     <h1>{{ page.tagline | default: "Transform your space. Elevate your sale." }}</h1>
     <p class="hero-subtitle">{{ page.subtitle | default: "Expert home staging and styling services to help your property sell faster and for more." }}</p>
@@ -14,6 +12,7 @@ layout: default
       <a href="{{ '/portfolio/' | relative_url }}" class="hero-btn hero-btn--outline">View our work</a>
     </div>
   </div>
+  <div class="hero-image"{% if page.hero_image %} style="background-image: url('{{ page.hero_image | relative_url }}')"{% endif %}></div>
 </section>
 
 {{ content }}
@@ -22,18 +21,19 @@ layout: default
   <div class="container">
     <div class="stats-grid">
       <div class="stat">
-        <div class="stat-number">73%</div>
-        <div class="stat-label">faster sale compared to unstaged properties</div>
+        <div class="stat-number">10&times;</div>
+        <div class="stat-label">return on investment — every £1 spent can return up to £10 in final sale price*</div>
       </div>
       <div class="stat">
-        <div class="stat-number">+15%</div>
-        <div class="stat-label">higher achieved sale price on average</div>
+        <div class="stat-number">3&times;</div>
+        <div class="stat-label">faster to sell — staged properties sell up to three times quicker*</div>
       </div>
       <div class="stat">
-        <div class="stat-number">100%</div>
-        <div class="stat-label">of clients would recommend Sea Glass</div>
+        <div class="stat-number">8–10%</div>
+        <div class="stat-label">higher sale price — staged homes consistently achieve more than unstaged*</div>
       </div>
     </div>
+    <p class="stats-footnote"><a href="{{ '/home-staging/' | relative_url }}">See the research behind these figures &rarr;</a></p>
   </div>
 </section>
 

@@ -15,7 +15,7 @@
     </style>
 </head>
 <body class="bg-white flex flex-col items-center justify-center min-h-screen m-0 p-0">
-    <h1 class="font-montserrat text-2xl md:text-2xl font-semibold mb-2 text-gray-800">Coming Soon</h1>
+    <h1 class="font-montserrat text-2xl md:text-2xl font-semibold mb-2 text-gray-800">Coming Soon Here</h1>
     <img 
       src="/logos/logo1.jpeg" 
       alt="Logo" 

@@ -1,6 +1,6 @@
-# cathysmithdesigns
+# Sea Glass Home Designs
 
-Personal design portfolio website for Cathy Smith Designs. Built as a static site and hosted on AWS.
+Website for Sea Glass Home Designs. Built as a static site and hosted on AWS.
 
 ## Tech Stack
 
@@ -13,7 +13,7 @@ Personal design portfolio website for Cathy Smith Designs. Built as a static sit
 ## Project Structure
 
 ```
-cathysmithdesigns/
+seaglasshomedesigns/
 ├── .circleci/config.yml     # CI/CD pipeline config
 ├── _layouts/default.html   # Main HTML wrapper template
 ├── _sass/base.scss          # CSS variables (colors, fonts)

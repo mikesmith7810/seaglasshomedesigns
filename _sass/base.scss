@@ -85,6 +85,10 @@ h1, h2, h3, h4, h5 {
 main {
   padding-top: $header-height;
 
+  @media (max-width: $bp-tablet) {
+    padding-top: $header-logo; // nav bar hidden, only logo bar remains
+  }
+
   @media (max-width: $bp-mobile) {
     padding-top: $header-mobile;
   }
@@ -388,10 +392,18 @@ main {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  height: calc(100vh - #{$header-height});
-  min-height: 520px;
+  height: calc(100dvh - #{$header-height});
+  min-height: 360px;
+
+  // Tablet widths: nav bar is hidden so header is logo bar only (280px)
+  @media (max-width: $bp-tablet) and (min-width: #{$bp-mobile + 1}) {
+    height: calc(100dvh - #{$header-logo});
+    min-height: 360px;
+  }
   width: 100%;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: $bp-mobile) {
     grid-template-columns: 1fr;
@@ -414,6 +426,14 @@ main {
     min-width: 0;
 
     @media (max-width: $bp-tablet) { padding: 48px 36px; }
+    @media (min-width: #{$bp-mobile + 1}) and (max-height: 650px) {
+      padding: 24px 40px;
+      h1 { font-size: clamp(0.95rem, 1.8vw, 1.6rem); }
+      .tagline-line { margin-bottom: 0.3rem; }
+      .hero-eyebrow { font-size: 0.7rem; margin-bottom: 0.3rem; }
+      .hero-subtitle { font-size: 0.82rem; margin-bottom: 0.8rem; }
+      .hero-buttons { margin-top: 1rem; }
+    }
     @media (max-width: $bp-mobile) {
       order: 2;
       padding: 24px 20px;

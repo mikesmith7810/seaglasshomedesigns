@@ -21,7 +21,8 @@
       "Bash(ffmpeg:*)",
       "Bash(python3:*)",
       "Bash(pngquant:*)",
-      "Bash(brew install:*)"
+      "Bash(brew install:*)",
+      "Bash(ls:*)"
     ]
   }
 }

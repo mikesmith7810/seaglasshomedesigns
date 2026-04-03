@@ -5,5 +5,17 @@
     {%- include header.html -%}
     <main>{{ content }}</main>
     {%- include footer.html -%}
+    <script>
+      function fixHeroHeight() {
+        var hero = document.querySelector('.hero');
+        var header = document.querySelector('.site-header');
+        if (!hero || !header) return;
+        var headerH = header.getBoundingClientRect().height;
+        var h = Math.max(window.innerHeight - headerH, 360);
+        hero.style.height = h + 'px';
+      }
+      window.addEventListener('load', fixHeroHeight);
+      window.addEventListener('resize', fixHeroHeight);
+    </script>
   </body>
 </html>

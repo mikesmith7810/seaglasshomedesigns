@@ -6,12 +6,37 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "name": "{{ site.title }}",
     "description": "{{ site.description }}",
     "url": "{{ site.url }}",
     "telephone": "{{ site.phone }}",
     "email": "{{ site.email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Weymouth",
+      "addressRegion": "Dorset",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.6097,
+      "longitude": -2.4567
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Weymouth" },
+      { "@type": "City", "name": "Dorchester" },
+      { "@type": "City", "name": "Bournemouth" },
+      { "@type": "AdministrativeArea", "name": "Dorset" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Staging" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Design" } }
+      ]
+    },
     "sameAs": [
       "https://www.facebook.com/{{ site.facebook_username }}",
       "https://www.instagram.com/{{ site.instagram_username }}"

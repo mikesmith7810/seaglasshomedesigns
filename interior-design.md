@@ -1,6 +1,6 @@
 ---
 layout: interior-design
-title: Interior Design
+title: "Interior Design — Weymouth & Dorset"
 description: "Sea Glass Home Designs offers bespoke interior design services in Weymouth, Dorchester and across Dorset — from initial concept and mood boards through to furniture sourcing and the finished transformation."
 subtitle: Bespoke design tailored to your home, your style, and your life.
 permalink: /interior-design/

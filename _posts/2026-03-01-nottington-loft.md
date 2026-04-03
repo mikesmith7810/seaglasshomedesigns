@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Loft Conversion, Nottington"
+title: "Loft Conversion"
 location: "Weymouth, Dorset"
 date: 2026-03-01
 property_type: "5-bedroom Cottage"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Whites, Stratton"
+title: "Living Space Redesign"
 location: "Dorchester, Dorset"
 date: 2026-02-10
 property_type: "4-bedroom Victorian terrace"

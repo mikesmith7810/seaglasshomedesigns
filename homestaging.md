@@ -4,8 +4,8 @@ title: About Home Staging
 description: "Discover why home staging and property staging works — the facts, figures, and science behind professional staging in Weymouth, Dorchester and across Dorset."
 subtitle: The facts, figures and science behind why professional staging works.
 permalink: /home-staging/
-photo_1: /assets/images/homestaging1.jpg
-photo_2: /assets/images/homestaging2.jpg
+photo_1: /assets/images/hero/Neutrallounge.jpg
+photo_2: /assets/images/hero/Scandilounge.jpg
 ---
 
 ## What is Home Staging?

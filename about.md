@@ -4,12 +4,14 @@ title: About Me
 description: "I'm Cathy, founder of Sea Glass Home Designs — offering interior design and property staging services in Weymouth, Dorchester, Dorset and surrounding areas, helping homeowners and buyers fall in love with every space."
 subtitle: Sea Glass Home Designs
 permalink: /about/
-photo: /assets/images/cathyaboutme1.jpg
+photo: /assets/images/about/cathyaboutme1.jpg
 ---
 
 ## Hello, I'm Cathy
 
-I'm Cathy, founder and creative lead of Sea Glass Home Designs. With a lifetime love of interiors born from my childhood in France — getting involved with property viewings and house renovations from a young age and being surrounded by the most inspiring classic architecture — I have gained extensive experience in renovating homes and am fortunate to have turned my passion for interior design and styling into my profession, offering both design and property staging services.
+I'm Cathy, founder and creative lead of Sea Glass Home Designs. 
+
+With a lifetime love of interiors born from my childhood in France — getting involved with property viewings and house renovations from a young age and being surrounded by the most inspiring classic architecture — I have gained extensive experience in renovating homes and am fortunate to have turned my passion for interior design and styling into my profession, offering both design and property staging services.
 
 I started Sea Glass Home Designs from the belief that every home has the potential to feel like a sanctuary and my love of bringing out a home's best qualities, joining aesthetics with functionality. I am a firm believer that home is not just a look — it is first a feeling. I help homeowners transform their house into a home where they can fully relax and be themselves in a beautiful, personalised environment, and create aspirational living for potential home buyers through home staging.
 

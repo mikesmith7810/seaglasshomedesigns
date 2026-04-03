@@ -34,11 +34,46 @@ layout: default
     <h2>Project Gallery</h2>
     <div class="post-gallery-grid">
       {% for image in page.images %}
-      <img src="{{ image | relative_url }}" alt="{{ page.title }} — photo {{ forloop.index }}">
+      <img src="{{ image | relative_url }}" alt="{{ page.title }} — photo {{ forloop.index }}" class="gallery-thumb">
       {% endfor %}
     </div>
   </div>
 </div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  const lightbox   = document.getElementById('lightbox');
+  const lbImg      = document.getElementById('lightbox-img');
+  const lbClose    = document.getElementById('lightbox-close');
+
+  document.querySelectorAll('.gallery-thumb').forEach(function(img) {
+    img.addEventListener('click', function() {
+      lbImg.src = this.src;
+      lbImg.alt = this.alt;
+      lightbox.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
 {% endif %}
 
 <div class="post-back container">

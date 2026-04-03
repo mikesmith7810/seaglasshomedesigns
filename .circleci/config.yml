@@ -9,8 +9,7 @@ references:
   container_config: &container_config
     working_directory: ~/www/
     docker:
-      # Using the modern 'cimg' variant for better compatibility
-      - image: cimg/ruby:3.0-node
+      - image: cimg/ruby:3.3-node
 
 jobs:
   build:
@@ -23,9 +22,15 @@ jobs:
       - bundle/bundle-install
       - run:
           name: "Build site"
-          command: bundle exec jekyll build --trace --lsi --strict_front_matter --profile
-      # Using persist_to_workspace instead of save_cache for transferring files between jobs
-      # This is the "proper" way to move your build files to the deploy job
+          command: bundle exec jekyll build --trace --strict_front_matter --profile
+      - run:
+          name: "Verify CSS compiled"
+          command: |
+            if grep -q "@use" _site/assets/css/main.css; then
+              echo "ERROR: CSS was not compiled - still contains SCSS @use directive"
+              exit 1
+            fi
+            echo "CSS compiled successfully"
       - persist_to_workspace:
           root: .
           paths:

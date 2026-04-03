@@ -42,7 +42,7 @@ $bp-wide:   1100px;
   padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: $color-bg; }
 
 body {
   background: $color-bg;

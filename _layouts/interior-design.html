@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="about-banner">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+  </div>
+</div>
+
+<section class="hs-intro">
+  <div class="container hs-intro-grid">
+    <div class="hs-intro-text">
+      {{ content }}
+    </div>
+    <div class="hs-intro-photos">
+      {% if page.photo_1 %}
+      <img src="{{ page.photo_1 | relative_url }}" alt="Interior design mood board">
+      {% endif %}
+      {% if page.photo_2 %}
+      <img src="{{ page.photo_2 | relative_url }}" alt="Interior design transformation">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="id-process">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="id-steps">
+      <div class="id-step">
+        <div class="id-step-number">01</div>
+        <h3>Initial Consultation</h3>
+        <p>We start with a conversation about your home, your lifestyle, and what you want to achieve. Whether you have a clear vision or need direction from scratch, I'll listen carefully and help shape ideas that are right for you.</p>
+      </div>
+      <div class="id-step">
+        <div class="id-step-number">02</div>
+        <h3>Mood Board &amp; Design Concept</h3>
+        <p>I'll create a detailed mood board and design scheme for each room — bringing together colour palettes, textures, furniture styles, and finishes into a cohesive vision you can see and respond to before anything is purchased or changed.</p>
+      </div>
+      <div class="id-step">
+        <div class="id-step-number">03</div>
+        <h3>Sourcing &amp; Planning</h3>
+        <p>Once the design is agreed, I'll source furniture, fabrics, lighting, and accessories that fit your budget and style. Every item is considered as part of the whole — nothing is chosen in isolation.</p>
+      </div>
+      <div class="id-step">
+        <div class="id-step-number">04</div>
+        <h3>The Transformation</h3>
+        <p>I'll oversee and manage the styling process through to completion, ensuring the finished result matches the design vision — a space that feels beautifully considered, personal, and uniquely yours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to reimagine your home?</h2>
+    <p>Get in touch for a free initial conversation about your project.</p>
+    <a href="{{ '/contact/' | relative_url }}" class="hero-btn hero-btn--primary" style="display:inline-block; margin-top: 0.5rem;">Get in touch</a>
+  </div>
+</section>

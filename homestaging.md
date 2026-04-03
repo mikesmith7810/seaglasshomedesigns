@@ -1,6 +1,7 @@
 ---
 layout: homestaging
 title: About Home Staging
+description: "Discover why home staging works — the facts, figures, and science behind professional property staging and how it helps homes sell faster and for more."
 subtitle: The facts, figures and science behind why professional staging works.
 permalink: /home-staging/
 photo_1: /assets/images/homestaging1.jpg

@@ -1,14 +1,26 @@
 title: Sea Glass Home Styling
-email: hello@seaglasshomestyling.co.uk
+email: hello@seaglasshomedesigns.com
 phone: "07753 741423"
 description: "Professional home staging and styling services to help your property sell faster and for more."
 instagram_username: seaglashhomestyling
 facebook_username: seaglashhomestyling
 
 baseurl: ""
-url: ""
+url: "https://www.seaglasshomedesigns.com"
+lang: en-GB
 
 formspree_id: YOUR_FORM_ID
 
+twitter:
+  card: summary_large_image
+
+social:
+  name: Sea Glass Home Styling
+  links:
+    - https://www.facebook.com/seaglashhomestyling
+    - https://www.instagram.com/seaglashhomestyling
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About Me
+description: "Meet Cathy, the professional home stager and interior stylist behind Sea Glass Home Styling — helping homeowners and estate agents present properties at their very best."
 subtitle: Sea Glass Home Styling
 permalink: /about/
 photo: /assets/images/cathyaboutme1.jpg

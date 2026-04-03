@@ -15,7 +15,11 @@
       "WebSearch",
       "Bash(git stash:*)",
       "Bash(git stash pop:*)",
-      "Bash(bundle install:*)"
+      "Bash(bundle install:*)",
+      "Bash(sips:*)",
+      "Bash(convert:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(python3:*)"
     ]
   }
 }

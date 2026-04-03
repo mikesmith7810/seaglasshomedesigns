@@ -20,7 +20,8 @@
       "Bash(convert:*)",
       "Bash(ffmpeg:*)",
       "Bash(python3:*)",
-      "Bash(pngquant:*)"
+      "Bash(pngquant:*)",
+      "Bash(brew install:*)"
     ]
   }
 }

@@ -18,6 +18,11 @@ layout: default
   <div class="hero-image"{% if page.hero_image %} style="background-image: url('{{ page.hero_image | relative_url }}')"{% endif %}></div>
 </section>
 
+<div class="mobile-hero-cta">
+  <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
+  <a href="{{ '/portfolio/' | relative_url }}" class="hero-btn hero-btn--outline">View our work</a>
+</div>
+
 {{ content }}
 
 <section class="stats-band">

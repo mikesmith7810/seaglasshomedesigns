@@ -395,8 +395,12 @@ main {
 
   @media (max-width: $bp-mobile) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 70vw;
-    height: auto;
+    grid-template-rows: 38% 62%;
+    height: calc(100svh - #{$header-mobile});
+    min-height: 520px;
+  }
+
+  @media (max-width: $bp-mobile) and (max-height: 700px) {
     min-height: unset;
   }
 
@@ -410,7 +414,22 @@ main {
     min-width: 0;
 
     @media (max-width: $bp-tablet) { padding: 48px 36px; }
-    @media (max-width: $bp-mobile) { padding: 48px 24px; order: 1; }
+    @media (max-width: $bp-mobile) {
+      order: 2;
+      padding: 24px 20px;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    @media (max-width: $bp-mobile) and (max-height: 700px) {
+      padding: 16px 20px;
+      font-size: 0.82rem;
+
+      .hero-eyebrow  { font-size: 0.68rem; margin-bottom: 0.4rem; }
+      .tagline-line  { font-size: 0.92rem; margin-bottom: 0.4rem; }
+      .hero-subtitle { font-size: 0.78rem; margin-bottom: 0.6rem; }
+      .hero-buttons  { display: none; }
+    }
   }
 
   // Right pane — photo
@@ -420,7 +439,9 @@ main {
     background-color: $color-teal;
     min-width: 0;
 
-    @media (max-width: $bp-mobile) { order: 2; }
+    @media (max-width: $bp-mobile) {
+      order: 1;
+    }
   }
 
   &-eyebrow {
@@ -457,6 +478,7 @@ main {
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
 
   &-btn {
@@ -488,6 +510,38 @@ main {
       &:hover {
         background: rgba(255,255,255,0.12);
         border-color: $color-white;
+      }
+    }
+  }
+}
+
+// Mobile-only CTA strip below hero (shown when buttons hidden at small heights)
+.mobile-hero-cta {
+  display: none;
+
+  @media (max-width: $bp-mobile) and (max-height: 700px) {
+    display: flex;
+    gap: 10px;
+    padding: 12px 20px;
+    background: $color-white;
+    border-top: 2px solid $color-border;
+
+    .hero-btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px 12px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+
+      &.hero-btn--primary {
+        background: $color-teal;
+        color: $color-white;
+      }
+
+      &.hero-btn--outline {
+        background: transparent;
+        color: $color-teal;
+        border-color: $color-teal;
       }
     }
   }

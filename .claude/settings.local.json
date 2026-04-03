@@ -19,7 +19,8 @@
       "Bash(sips:*)",
       "Bash(convert:*)",
       "Bash(ffmpeg:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(pngquant:*)"
     ]
   }
 }

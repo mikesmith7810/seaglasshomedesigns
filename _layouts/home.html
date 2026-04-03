@@ -7,7 +7,7 @@ layout: default
     <p class="hero-eyebrow">Professional Home Staging &amp; Styling</p>
     <h1>{{ page.tagline | default: "Transform your space. Elevate your sale." }}</h1>
     <p class="hero-subtitle">{{ page.subtitle | default: "Expert home staging and styling services to help your property sell faster and for more." }}</p>
-    <div class="hero-buttons">
+    <div class="hero-buttons" data-nosnippet>
       <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
       <a href="{{ '/portfolio/' | relative_url }}" class="hero-btn hero-btn--outline">View our work</a>
     </div>

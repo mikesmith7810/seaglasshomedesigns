@@ -20,13 +20,13 @@ $font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans
 $font-body:    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
 // Header heights — 2-bar layout (logo + nav)
-$header-logo:   280px;   // white logo bar (large logo)
+$header-logo:   180px;   // white logo bar
 $header-nav:     48px;   // sage nav bar
-$header-height: $header-logo + $header-nav;  // 328px
+$header-height: $header-logo + $header-nav;  // 228px
 
 // Mobile header (nav collapses to dropdown, logo bar shorter)
-$header-logo-mobile: 170px;
-$header-mobile:      $header-logo-mobile;    // 170px
+$header-logo-mobile: 130px;
+$header-mobile:      $header-logo-mobile;    // 130px
 
 // Responsive breakpoints
 $bp-mobile:  768px;
@@ -129,11 +129,11 @@ main {
   display: block;
 
   img {
-    height: 213px;
+    height: 140px;
     width: auto;
 
     @media (max-width: $bp-mobile) {
-      height: 120px;
+      height: 90px;
     }
   }
 }

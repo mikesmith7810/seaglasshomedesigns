@@ -22,7 +22,8 @@
       "Bash(python3:*)",
       "Bash(pngquant:*)",
       "Bash(brew install:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(magick:*)"
     ]
   }
 }

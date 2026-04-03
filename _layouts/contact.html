@@ -14,7 +14,9 @@ layout: default
     <div class="contact-grid">
 
       <div class="contact-form-wrap">
-        <form action="https://formspree.io/f/{{ site.formspree_id }}" method="POST" class="contact-form">
+        <form action="https://formsubmit.co/{{ site.email }}" method="POST" class="contact-form">
+          <input type="hidden" name="_next" value="{{ site.url }}/thanks/">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>

@@ -23,7 +23,8 @@
       "Bash(pngquant:*)",
       "Bash(brew install:*)",
       "Bash(ls:*)",
-      "Bash(magick:*)"
+      "Bash(magick:*)",
+      "Bash(find:*)"
     ]
   }
 }

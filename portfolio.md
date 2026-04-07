@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Portfolio
-description: A selection of recent home staging and styling projects.
+title: "Home Staging & Interior Design Portfolio — Dorset"
+description: "Browse recent home staging and interior design projects by Sea Glass Home Designs across Weymouth, Dorchester and Dorset."
 permalink: /portfolio/
 ---

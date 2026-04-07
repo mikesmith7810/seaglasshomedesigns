@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me
+title: "About Sea Glass Home Designs — Weymouth & Dorset"
 description: "I'm Cathy, founder of Sea Glass Home Designs — offering interior design and property staging services in Weymouth, Dorchester, Dorset and surrounding areas, helping homeowners and buyers fall in love with every space."
 subtitle: Sea Glass Home Designs
 permalink: /about/

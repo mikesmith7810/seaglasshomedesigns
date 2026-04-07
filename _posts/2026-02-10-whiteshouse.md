@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Living Space Redesign"
+title: "Living Space Redesign — Stratton, Dorchester"
+description: "Interior design and living room redesign for a 4-bedroom Victorian terrace in Stratton, Dorchester, Dorset. Sea Glass Home Designs transformed the space to unlock its full potential."
 location: "Dorchester, Dorset"
 date: 2026-02-10
 property_type: "4-bedroom Victorian terrace"
@@ -12,8 +13,12 @@ images:
 #   - /assets/images/posts/brighton-terrace/garden.jpg
 ---
 
-This beautiful house in Stratton underwent a redesign for the living room. This made great use of the space allowing the full potential of the room
+This beautiful 4-bedroom Victorian terrace in Stratton, near Dorchester, Dorset, came to Sea Glass Home Designs for a full living room redesign.
+
+The existing layout wasn't making the most of the room's generous proportions and character features. By rethinking the furniture arrangement and sourcing new pieces suited to the space, the redesign opened up the room and created a much more inviting and functional living area.
+
+The transformation is a great example of what considered interior design in Dorchester can achieve — unlocking a room's potential without structural changes, simply through thoughtful styling and the right furniture choices.
 
 **What we did:**
-- Full Interior Redesign
+- Full interior redesign
 - Furniture sourced

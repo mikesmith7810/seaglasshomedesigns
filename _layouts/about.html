@@ -2,17 +2,15 @@
 layout: default
 ---
 
-<div class="container">
-  <div class="about-content">
-    <div class="about-content-photo">
-      {% if page.photo %}
-        <img src="{{ page.photo | relative_url }}" alt="{{ page.name | default: site.title }}">
-      {% else %}
-        <div class="about-content-photo-placeholder"></div>
-      {% endif %}
-    </div>
-    <div class="about-content-text">
-      {{ content }}
-    </div>
+<div class="about-content">
+  <div class="about-content-photo">
+    {% if page.photo %}
+      <img src="{{ page.photo | relative_url }}" alt="{{ page.name | default: site.title }}">
+    {% else %}
+      <div class="about-content-photo-placeholder"></div>
+    {% endif %}
+  </div>
+  <div class="about-content-text">
+    {{ content }}
   </div>
 </div>

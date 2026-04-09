@@ -10,88 +10,206 @@ layout: default
 </div>
 
 <section class="hs-intro">
-  <div class="container hs-intro-grid">
+  <div class="hs-intro-grid">
     <div class="hs-intro-text">
       {{ content }}
     </div>
-    <div class="hs-intro-photos">
+    {% if page.photo_1 or page.photo_2 %}
+    <div class="hs-intro-photo">
       {% if page.photo_1 %}
       <img src="{{ page.photo_1 | relative_url }}" alt="Home staging example">
-      {% endif %}
-      {% if page.photo_2 %}
+      {% elsif page.photo_2 %}
       <img src="{{ page.photo_2 | relative_url }}" alt="Home staging example">
       {% endif %}
     </div>
+    {% endif %}
   </div>
 </section>
 
 <section class="hs-stats">
+  <div class="hs-stats-grid">
+
+    <div class="hs-stats-photo">
+      <img src="{{ page.stats_photo | default: '/assets/images/posts/whiteshouse/Whitesstaging.jpg' | relative_url }}" alt="Staged home interior">
+    </div>
+
+    <div class="hs-stats-content">
+      <div class="hs-stat-block">
+        <h2>1. The Impact on Sale Price</h2>
+        <p class="hs-stat-intro">Is it worth the money? The evidence says yes.</p>
+        <ul class="hs-fact-list">
+          <li><strong>A strong return on investment</strong> — Every £1,000 spent on staging can return up to £10,000 in the final sale price, according to industry surveys from the Home Staging Association UK.</li>
+          <li><strong>Sell for more</strong> — Staged homes consistently achieve higher sale prices — typically up to 10% more than unstaged properties. On a £300,000 home, that could mean tens of thousands of pounds more.</li>
+          <li><strong>An affordable investment</strong> — Staging costs a small fraction of a property's guide price, making it one of the most cost-effective things you can do before going to market.</li>
+          <li><strong>Avoid costly price reductions</strong> — Unstaged properties that sit on the market often face price reductions. Professional staging before listing can help you avoid that conversation entirely.</li>
+        </ul>
+      </div>
+
+      <div class="hs-stat-block">
+        <h2>2. The Impact on Time on Market</h2>
+        <p class="hs-stat-intro">Staging reduces the disruption of prolonged listings and helps sellers move on sooner.</p>
+        <ul class="hs-fact-list">
+          <li><strong>Sell significantly faster</strong> — Staged properties can sell up to three times faster than unstaged ones, according to research from the Home Staging Association UK.</li>
+          <li><strong>Reduce the carrying costs</strong> — Every extra week a property sits unsold costs money — mortgage payments, utilities, council tax. Less time on the market means real savings adding up.</li>
+        </ul>
+      </div>
+
+      <div class="hs-stat-block">
+        <h2>3. The Psychology of the Buyer</h2>
+        <p class="hs-stat-intro">This is why staging works — bridging the gap between a house and a home.</p>
+        <ul class="hs-fact-list">
+          <li><strong>Buyers can picture themselves at home</strong> — The majority of buyers' agents say that staging makes it easier for clients to envision a property as their future home, particularly in empty spaces.</li>
+          <li><strong>Stand out online and attract more viewings</strong> — Your first showing is online. A staged home stands out in search results, attracts more views and converts significantly more browsers into viewers.</li>
+          <li><strong>Buyers stay longer at viewings</strong> — Most buyers spend more time in a staged home, giving them the space to connect emotionally and make a decision.</li>
+        </ul>
+      </div>
+
+      <p class="hs-disclaimer-inline">* Based on average data from the National Association of REALTORS&reg; (NAR) and the Home Staging Association (HSA) UK. Actual results vary by property and current market conditions.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="hs-process">
   <div class="container">
+    <h2>How Does a Property Staging Package Work?</h2>
+    <p class="hs-process-intro">From first conversation to final de-stage — a clear, hassle-free process.</p>
 
-    <div class="hs-stat-block">
-      <h2>1. The Impact on Sale Price</h2>
-      <p class="hs-stat-intro">Is it worth the money? These statistics prove that it is.</p>
-      <ul class="hs-fact-list">
-        <li><strong>Up to 10&times; Return on Investment</strong> — Industry surveys from the Home Staging Association (HSA) UK estimate that a professional staging investment can deliver a return of 800% to 1,000%. Every £1 spent on staging can return up to £10 in the final sale price.</li>
-        <li><strong>8%&ndash;10% Price Increase</strong> — Staged homes consistently sell for more. Data suggests that properly staged homes sell for 8% to 10% more than unstaged counterparts. On a £300,000 property, that is an extra £24,000 to £30,000.</li>
-        <li><strong>Low Initial Investment</strong> — Staging typically costs between 0.5% and 1.5% of a property's guide price — a small fraction of the potential 8% to 10% increase in value.</li>
-        <li><strong>Avoiding Price Reductions</strong> — The average first price reduction on an unstaged UK property is often 3% to 5%. Professional staging before listing can help avoid this costly reduction entirely.</li>
-      </ul>
+    <div class="hs-steps">
+
+      <div class="hs-step">
+        <div class="hs-step-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 8h32v24H28l-4 5-4-5H8z"/>
+          </svg>
+        </div>
+        <span class="hs-step-num">Step 1</span>
+        <h3>Initial Conversation</h3>
+        <p>We discuss the property, your timeline and the target market.</p>
+      </div>
+
+      <div class="hs-step-arrow">&#8594;</div>
+
+      <div class="hs-step">
+        <div class="hs-step-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="4" width="28" height="40" rx="2"/>
+            <line x1="16" y1="16" x2="32" y2="16"/>
+            <line x1="16" y1="24" x2="32" y2="24"/>
+            <line x1="16" y1="32" x2="24" y2="32"/>
+          </svg>
+        </div>
+        <span class="hs-step-num">Step 2</span>
+        <h3>Your Quote</h3>
+        <p>We send a tailored quote for your review.</p>
+      </div>
+
+      <div class="hs-step-arrow">&#8594;</div>
+
+      <div class="hs-step">
+        <div class="hs-step-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="10" width="36" height="34" rx="2"/>
+            <line x1="6" y1="20" x2="42" y2="20"/>
+            <line x1="16" y1="6" x2="16" y2="14"/>
+            <line x1="32" y1="6" x2="32" y2="14"/>
+          </svg>
+        </div>
+        <span class="hs-step-num">Step 3</span>
+        <h3>Confirm &amp; Book</h3>
+        <p>Agree an installation date, sign the contracts and make payment.</p>
+      </div>
+
+      <div class="hs-step-arrow">&#8594;</div>
+
+      <div class="hs-step">
+        <div class="hs-step-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="6" width="36" height="36" rx="2"/>
+            <path d="M30 10l8 8-14 14-9 1 1-9z"/>
+          </svg>
+        </div>
+        <span class="hs-step-num">Step 4</span>
+        <h3>The Design Phase</h3>
+        <p>Planning the layout and selecting the perfect pieces for your property.</p>
+      </div>
+
+      <div class="hs-step-arrow">&#8594;</div>
+
+      <div class="hs-step">
+        <div class="hs-step-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 4L4 22h6v22h28V22h6z"/>
+            <rect x="18" y="30" width="12" height="14" rx="1"/>
+          </svg>
+        </div>
+        <span class="hs-step-num">Step 5</span>
+        <h3>Install Day</h3>
+        <p>We collect the keys and transform your property — making it market and photo ready.</p>
+      </div>
+
+      <div class="hs-step-arrow">&#8594;</div>
+
+      <div class="hs-step">
+        <div class="hs-step-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="8,14 24,28 40,14"/>
+            <rect x="6" y="10" width="36" height="28" rx="2"/>
+            <line x1="6" y1="38" x2="42" y2="38"/>
+          </svg>
+        </div>
+        <span class="hs-step-num">Step 6</span>
+        <h3>The De-Stage</h3>
+        <p>Once your property is sold, we pack everything back up and clear the house.</p>
+      </div>
+
     </div>
 
-    <div class="hs-stat-block">
-      <h2>2. The Impact on Time on Market</h2>
-      <p class="hs-stat-intro">Staging reduces the disruption of prolonged listings and helps sellers get their lives back sooner.</p>
-      <ul class="hs-fact-list">
-        <li><strong>3&times; Faster Sales</strong> — Research from the Home Staging Association UK indicates that staged properties can sell up to three times faster than those that are unstaged.</li>
-        <li><strong>73% Reduction in Listing Time</strong> — Professionally staged properties spend an average of 73% less time on the market, translating to significant savings on mortgage payments, utilities, and council tax.</li>
-        <li><strong>Faster Than Price Reductions</strong> — Homes listed unstaged and unsold averaged 143 days on the market. Once staged, they sold in an average of just 40 days. For homes staged before listing, the average was only 23 days.</li>
-      </ul>
-    </div>
-
-    <div class="hs-stat-block">
-      <h2>3. The Psychology of the Buyer</h2>
-      <p class="hs-stat-intro">These numbers explain <em>why</em> staging works — bridging the gap between a house and a home.</p>
-      <ul class="hs-fact-list">
-        <li><strong>83% of Buyers Can Visualise Better</strong> — 83% of buyers' agents say that staging makes it easier for clients to envision a property as their future home, especially for empty spaces.</li>
-        <li><strong>31% More Walk-Throughs</strong> — Your first showing is online. Staging increases a property's digital appeal, with 31% of buyers more willing to schedule a viewing after seeing a staged home online.</li>
-        <li><strong>10% More Online Views</strong> — A well-staged home can receive up to 10% more views online than a cluttered or vacant listing.</li>
-        <li><strong>75% of Buyers Linger Longer</strong> — Surveys suggest that 75% of buyers spend more time viewing a home that has been staged — giving them time to fall in love with it.</li>
+    <div class="hs-package">
+      <h3>What's Included in Your Package</h3>
+      <p class="hs-package-summary">Everything needed to showcase your property's full potential — furniture, lighting, accessories and artwork brought together through professional styling to create a look that appeals to a wider market.</p>
+      <ul class="hs-package-list">
+        <li>An initial conversation — virtual or onsite</li>
+        <li>Mood board proposal and floor plans tailored to your target market</li>
+        <li>Full staging set up including delivery and assembly of furniture, accessories and lighting</li>
+        <li>A minimum of 6 weeks of aspirational presentation and rental of all furniture and accessories</li>
+        <li>De-staging and removal of all furniture, accessories and lighting once sold — (in line with contract terms)</li>
       </ul>
     </div>
 
   </div>
 </section>
 
-<section class="hs-compare">
-  <div class="container">
-    <h2>Don't List Without It: The Staging Difference</h2>
-    <div class="hs-compare-grid">
-      <div class="hs-compare-card hs-compare-card--unstaged">
-        <h3>Unstaged Home</h3>
-        <ul>
-          <li><span class="hs-compare-label">Average time on market</span> 143 days</li>
-          <li><span class="hs-compare-label">Final offers</span> 90–95% of asking price</li>
-          <li><span class="hs-compare-label">Outcome</span> High risk of 3–5% price reduction</li>
-        </ul>
+<section class="hs-pricing">
+  <div class="hs-pricing-grid">
+
+    <div class="hs-pricing-content">
+      <h2>Pricing</h2>
+
+      <div class="hs-pricing-body">
+        <p>Staging your empty home for sale is one of the most powerful real-estate marketing strategies. Research consistently shows high returns on investment, reduced time on the market, faster sales and often at a higher value. Your staging investment can save you money by avoiding the price reductions so many unstaged properties face after sitting on the market for too long.</p>
+
+        <p>Because every home is unique, staging isn't a one-size-fits-all price — it's a bespoke service tailored to the specific needs of the property. The final investment will be determined by the size of the property and access (which affects the quantity of furniture and staging labour required), the scope of the staging (full property or key rooms), and the desired look — whether that's high-end luxury or a welcoming home for a first-time buyer. The higher the quality of the inventory, the higher the investment.</p>
+
+        <p>Staging typically costs between 1% and 1.5% of a property's guide price — a small fraction of the potential 8–10% increase in value it can generate, and significantly less than the first price reduction many empty, unsold properties face.</p>
       </div>
-      <div class="hs-compare-card hs-compare-card--staged">
-        <h3>Staged by Sea Glass</h3>
-        <ul>
-          <li><span class="hs-compare-label">Average time on market</span> 23 days</li>
-          <li><span class="hs-compare-label">Final offers</span> 100–110% of asking price</li>
-          <li><span class="hs-compare-label">Outcome</span> Potential £15,000–£30,000 extra profit on a £300k home</li>
-        </ul>
+
+      <div class="hs-pricing-card">
+        <div class="hs-pricing-from">
+          <span class="hs-pricing-label">Packages from</span>
+          <span class="hs-pricing-amount">£2500</span>
+        </div>
+        <p>Get in touch for a free, no-obligation conversation and a tailored quote for your property.</p>
+        <a href="{{ '/contact/' | relative_url }}" class="hero-btn hero-btn--primary">Request a Quote</a>
       </div>
     </div>
+
+    <div class="hs-pricing-visual">
+      <img src="{{ '/assets/images/logos/seaglasslogooriginalsand.png' | relative_url }}" alt="{{ site.title }}">
+    </div>
+
   </div>
 </section>
-
-<div class="hs-disclaimer">
-  <div class="container">
-    <p>* Based on average data from the National Association of REALTORS&reg; (NAR) and the Home Staging Association (HSA) UK. Actual results vary by property and current market conditions.</p>
-  </div>
-</div>
 
 <section class="cta-band">
   <div class="container">

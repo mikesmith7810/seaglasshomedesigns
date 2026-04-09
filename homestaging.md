@@ -1,15 +1,33 @@
 ---
 layout: homestaging
-title: "Home Staging Weymouth, Dorchester & Dorset"
+title: "Home Staging in Weymouth, Dorchester & Dorset"
 description: "Professional vacant property staging in Weymouth, Dorchester and across Dorset. Staged homes sell up to 3× faster and for 8–10% more. Find out why it works."
-subtitle: The facts, figures and science behind why professional staging works.
 permalink: /home-staging/
 photo_1: /assets/images/hero/Neutrallounge.jpg
-photo_2: /assets/images/hero/Scandilounge.jpg
 ---
 
 ## What is Home Staging?
 
-Home staging is the art of preparing a property for sale by presenting it in its very best light. It goes beyond a tidy-up — it's a strategic process of arranging furniture, choosing the right accessories, balancing light and space, and creating an emotional connection that makes buyers picture themselves living there.
+Home staging is the art of preparing a property for sale by presenting it in its very best light; dressing it with furniture, decor and accessories to give it a market-ready appeal that increases its sellability in a competitive market. Most buyers struggle to visualise scale and purpose in an empty property — staging enables that vision where they can imagine living in the space and speeds up their decision process. Staging does more than improve appearance, it is an effective strategic marketing tool that sells properties faster and often for more by creating the best first impressions and that all important emotional connection that turn viewers into buyers.
 
-Based in Weymouth and serving Dorchester, Dorset and the surrounding area, Sea Glass Home Designs specialises in property staging — also referred to as home staging — for vacant and empty properties so they sell faster and for more. The numbers below show exactly why it works.
+## What Sea Glass Home Designs Offers
+
+Based in Weymouth and serving Dorchester and the surrounding area of Dorset, Sea Glass Home Designs specialises in staging vacant properties, transforming them from a house to a vision of a home that buyers want to live in.
+
+Our home staging and property styling services maximise buyer interest — from standout estate agent listings through to viewings that convert. We work with:
+
+- Homeowners preparing vacant properties for sale
+- Estate agents looking to maximise listing appeal, increase viewings and achieve stronger sales
+- Property developers wanting to move vacant stock quickly and at the best possible price
+
+## Why Choose Sea Glass Home Designs?
+
+We work with you to deliver a market-ready look that appeals to your target market, aiming to achieve a quicker sale at the best possible price.
+
+- Interior design expertise
+- Founder-led service
+- Tailored inventory aligned to target market
+- Professional and clear communication
+- Attention to detail
+- Bespoke look
+- Reliability

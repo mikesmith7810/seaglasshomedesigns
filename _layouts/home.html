@@ -12,7 +12,8 @@ layout: default
     <p class="hero-subtitle">{{ page.subtitle | default: "Expert home staging and styling services to help your property sell faster and for more." }}</p>
     <div class="hero-buttons" data-nosnippet>
       <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
-      <a href="{{ '/portfolio/' | relative_url }}" class="hero-btn hero-btn--outline">View our work</a>
+      <a href="{{ '/home-staging/' | relative_url }}" class="hero-btn hero-btn--outline">Home Staging</a>
+      <a href="{{ '/interior-design/' | relative_url }}" class="hero-btn hero-btn--outline">Interior Design</a>
     </div>
   </div>
   <div class="hero-image"{% if page.hero_image %} style="background-image: url('{{ page.hero_image | relative_url }}')"{% endif %}></div>
@@ -20,7 +21,8 @@ layout: default
 
 <div class="mobile-hero-cta">
   <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
-  <a href="{{ '/portfolio/' | relative_url }}" class="hero-btn hero-btn--outline">View our work</a>
+  <a href="{{ '/home-staging/' | relative_url }}" class="hero-btn hero-btn--outline">Home Staging</a>
+  <a href="{{ '/interior-design/' | relative_url }}" class="hero-btn hero-btn--outline">Interior Design</a>
 </div>
 
 {{ content }}
@@ -65,10 +67,34 @@ layout: default
   </div>
 </section>
 
+<section class="reviews">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <blockquote class="review-text">"Cathy was so professional right from the start with our project. We explored numerous colour pallets, furnishings and accessories together, then Cathy worked her magic by sourcing everything for us. I would highly recommend Sea Glass Home Designs. Don't hesitate to book!"</blockquote>
+        <div class="review-author">
+          <span class="review-name">Emma W</span>
+          <span class="review-source">Google Review</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section class="portfolio-preview">
   <div class="container">
     <div class="section-intro">
-      <h2>Recent Projects</h2>
+      <h2>Projects</h2>
     </div>
     <div class="portfolio-grid">
       {% for post in site.posts limit:3 %}

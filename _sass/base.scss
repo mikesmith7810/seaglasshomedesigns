@@ -440,7 +440,6 @@ main {
       order: 2;
       padding: 24px 20px;
       justify-content: flex-start;
-      overflow: hidden;
     }
 
     @media (max-width: $bp-mobile) and (max-height: 700px) {
@@ -543,17 +542,17 @@ main {
 
   @media (max-width: $bp-mobile) and (max-height: 700px) {
     display: flex;
-    gap: 10px;
-    padding: 12px 20px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 20px;
     background: $color-white;
     border-top: 2px solid $color-border;
 
     .hero-btn {
-      flex: 1;
+      width: 100%;
       text-align: center;
-      padding: 10px 12px;
-      font-size: 0.75rem;
-      white-space: nowrap;
+      padding: 11px 16px;
+      font-size: 0.82rem;
 
       &.hero-btn--primary {
         background: $color-teal;

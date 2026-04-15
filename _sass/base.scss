@@ -453,12 +453,21 @@ main {
 
     @media (max-width: $bp-mobile) and (max-height: 700px) {
       padding: 16px 20px;
-      font-size: 0.82rem;
 
-      .hero-eyebrow  { font-size: 0.68rem; margin-bottom: 0.4rem; }
-      .tagline-line  { font-size: 0.92rem; margin-bottom: 0.4rem; }
-      .hero-subtitle { font-size: 0.78rem; margin-bottom: 0.6rem; }
-      .hero-buttons  { display: none; }
+      .hero-eyebrow  { font-size: 0.68rem; margin-bottom: 0.3rem; }
+      .tagline-line  { font-size: 0.88rem; margin-bottom: 0.3rem; }
+      .hero-subtitle { display: none; }
+      .hero-buttons  {
+        margin-top: 0.8rem;
+        gap: 6px;
+        flex-wrap: wrap;
+
+        // Call button spans full width
+        .hero-btn:first-child { flex: 0 0 100%; text-align: center; }
+        // Home Staging + Interior Design share the row
+        .hero-btn:not(:first-child) { flex: 1; text-align: center; }
+      }
+      .hero-btn { padding: 10px 10px; font-size: 0.78rem; }
     }
   }
 
@@ -545,36 +554,8 @@ main {
   }
 }
 
-// Mobile-only CTA strip below hero (shown when buttons hidden at small heights)
 .mobile-hero-cta {
   display: none;
-
-  @media (max-width: $bp-mobile) and (max-height: 700px) {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 14px 20px;
-    background: $color-white;
-    border-top: 2px solid $color-border;
-
-    .hero-btn {
-      width: 100%;
-      text-align: center;
-      padding: 11px 16px;
-      font-size: 0.82rem;
-
-      &.hero-btn--primary {
-        background: $color-teal;
-        color: $color-white;
-      }
-
-      &.hero-btn--outline {
-        background: transparent;
-        color: $color-teal;
-        border-color: $color-teal;
-      }
-    }
-  }
 }
 
 // ------------------------------------------------------------

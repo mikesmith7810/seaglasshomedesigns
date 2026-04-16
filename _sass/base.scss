@@ -1140,6 +1140,29 @@ main {
 }
 
 // ------------------------------------------------------------
+// AREAS BAND
+// ------------------------------------------------------------
+.areas-band {
+  background: $color-bg;
+  border-top: 1px solid $color-border;
+  padding: 18px 0;
+  text-align: center;
+
+  p {
+    font-size: 0.8rem;
+    color: $color-text-muted;
+    line-height: 1.65;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+.areas-label {
+  font-weight: 700;
+  color: $color-text;
+}
+
+// ------------------------------------------------------------
 // FOOTER
 // ------------------------------------------------------------
 .site-footer {

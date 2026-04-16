@@ -1,6 +1,6 @@
 ---
 layout: homestaging
-title: "Home Staging in Weymouth, Dorchester & Dorset"
+title: "Home Staging Services — Dorset"
 description: "Professional vacant property staging in Weymouth, Dorchester and across Dorset. Staged homes sell up to 3× faster and for 8–10% more. Find out why it works."
 permalink: /home-staging/
 photo_1: /assets/images/hero/Neutrallounge.jpg
@@ -12,7 +12,7 @@ Home staging is the art of preparing a property for sale by presenting it in its
 
 ## What Sea Glass Home Designs Offers
 
-Based in Weymouth and serving Dorchester and the surrounding area of Dorset, Sea Glass Home Designs specialises in staging vacant properties, transforming them from a house to a vision of a home that buyers want to live in.
+Based in Dorset and serving clients across the region, Sea Glass Home Designs specialises in staging vacant properties, transforming them from a house to a vision of a home that buyers want to live in.
 
 Our home staging and property styling services maximise buyer interest — from standout estate agent listings through to viewings that convert. We work with:
 

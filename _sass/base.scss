@@ -408,15 +408,13 @@ main {
   z-index: 1;
 
   @media (max-width: $bp-mobile) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 38% 62%;
-    height: calc(100svh - #{$header-mobile});
-    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
   }
 
-  @media (max-width: $bp-mobile) and (max-height: 700px) {
-    min-height: unset;
-  }
 
   // Left pane — teal background with text
   &-text {
@@ -447,24 +445,19 @@ main {
     }
     @media (max-width: $bp-mobile) {
       order: 2;
-      padding: 24px 20px;
+      flex: 0 0 auto;
+      padding: 20px 20px 24px;
       justify-content: flex-start;
-    }
 
-    @media (max-width: $bp-mobile) and (max-height: 700px) {
-      padding: 16px 20px;
-
-      .hero-eyebrow  { font-size: 0.68rem; margin-bottom: 0.3rem; }
-      .tagline-line  { font-size: 0.88rem; margin-bottom: 0.3rem; }
+      .hero-eyebrow  { font-size: 0.7rem; margin-bottom: 0.2rem; }
+      .tagline-line  { font-size: 0.95rem; margin-bottom: 0.2rem; }
       .hero-subtitle { display: none; }
       .hero-buttons  {
-        margin-top: 0.8rem;
-        gap: 6px;
+        margin-top: 0.75rem;
+        gap: 8px;
         flex-wrap: wrap;
 
-        // Call button spans full width
         .hero-btn:first-child { flex: 0 0 100%; text-align: center; }
-        // Home Staging + Interior Design share the row
         .hero-btn:not(:first-child) { flex: 1; text-align: center; }
       }
       .hero-btn { padding: 10px 10px; font-size: 0.78rem; }
@@ -480,6 +473,7 @@ main {
 
     @media (max-width: $bp-mobile) {
       order: 1;
+      flex: 0 0 50vw;
     }
   }
 
@@ -556,6 +550,27 @@ main {
 
 .mobile-hero-cta {
   display: none;
+}
+
+// Mobile-only subtitle pane — sits between hero and stats on small screens
+.mobile-subtitle-pane {
+  display: none;
+
+  @media (max-width: $bp-mobile) {
+    display: block;
+    background: $color-bg;
+    padding: 24px 20px 28px;
+    border-top: 1px solid $color-border;
+
+    p {
+      font-size: 0.9rem;
+      color: $color-text;
+      line-height: 1.65;
+      margin: 0;
+
+      strong { color: $color-teal; font-weight: 700; }
+    }
+  }
 }
 
 // ------------------------------------------------------------

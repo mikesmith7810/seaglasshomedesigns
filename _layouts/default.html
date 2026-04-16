@@ -10,6 +10,10 @@
         var hero = document.querySelector('.hero');
         var header = document.querySelector('.site-header');
         if (!hero || !header) return;
+        if (window.innerWidth <= 768) {
+          hero.style.height = '';
+          return;
+        }
         var headerH = header.getBoundingClientRect().height;
         var h = Math.max(window.innerHeight - headerH, 360);
         hero.style.height = h + 'px';

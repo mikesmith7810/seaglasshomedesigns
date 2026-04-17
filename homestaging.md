@@ -1,7 +1,7 @@
 ---
 layout: homestaging
 title: "Home Staging Services — Dorset"
-description: "Professional vacant property staging in Weymouth, Dorchester and across Dorset. Staged homes sell up to 3× faster and for 8–10% more. Find out why it works."
+description: "Professional home staging in Dorset and surrounding areas. Staged homes sell up to 3× faster and for 8–10% more. Find out why it works."
 permalink: /home-staging/
 photo_1: /assets/images/hero/Scandilounge.jpg
 ---

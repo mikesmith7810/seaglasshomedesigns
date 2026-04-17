@@ -646,6 +646,10 @@ main {
     margin: 0 auto;
 
     @media (max-width: $bp-mobile) { grid-template-columns: 1fr; }
+
+    &--single {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-card {
@@ -1073,7 +1077,7 @@ main {
 // REVIEWS
 // ------------------------------------------------------------
 .reviews {
-  padding: 80px 0;
+  padding: 40px 0 80px;
   background: $color-white;
 
   h2 {

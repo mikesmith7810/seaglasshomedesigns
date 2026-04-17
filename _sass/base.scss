@@ -431,7 +431,7 @@ main {
       h1 { font-size: clamp(0.95rem, 1.6vw, 1.5rem); }
       .tagline-line { margin-bottom: 0.25rem; }
       .hero-eyebrow { font-size: 0.72rem; margin-bottom: 0.3rem; }
-      .hero-subtitle { font-size: 0.82rem; margin-bottom: 0.5rem; }
+      .hero-subtitle { font-size: 1rem; margin-bottom: 0.5rem; }
       .hero-buttons { margin-top: 0.5rem; gap: 8px; }
       .hero-btn { padding: 10px 20px; font-size: 0.8rem; }
     }
@@ -440,7 +440,7 @@ main {
       h1 { font-size: clamp(0.95rem, 1.8vw, 1.6rem); }
       .tagline-line { margin-bottom: 0.3rem; }
       .hero-eyebrow { font-size: 0.7rem; margin-bottom: 0.3rem; }
-      .hero-subtitle { font-size: 0.82rem; margin-bottom: 0.8rem; }
+      .hero-subtitle { font-size: 1rem; margin-bottom: 0.8rem; }
       .hero-buttons { margin-top: 1rem; }
     }
     @media (max-width: $bp-mobile) {
@@ -501,7 +501,7 @@ main {
   }
 
   &-subtitle {
-    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    font-size: clamp(1.15rem, 1.7vw, 1.4rem);
     color: rgba(255,255,255,0.8);
     margin-bottom: 2.4rem;
     max-width: 100%;

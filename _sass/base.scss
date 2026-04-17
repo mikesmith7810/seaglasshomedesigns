@@ -421,8 +421,8 @@ main {
     background: $color-teal;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 60px 56px;
+    justify-content: flex-start;
+    padding: 32px 56px 60px;
     min-width: 0;
 
     @media (max-width: $bp-tablet) { padding: 48px 36px; }
@@ -430,7 +430,7 @@ main {
       padding: 16px 56px;
       h1 { font-size: clamp(0.95rem, 1.6vw, 1.5rem); }
       .tagline-line { margin-bottom: 0.25rem; }
-      .hero-eyebrow { font-size: 0.72rem; margin-bottom: 0.3rem; }
+      .hero-eyebrow { font-size: 0.88rem; margin-bottom: 1.2rem; }
       .hero-subtitle { font-size: 1rem; margin-bottom: 0.5rem; }
       .hero-buttons { margin-top: 0.5rem; gap: 8px; }
       .hero-btn { padding: 10px 20px; font-size: 0.8rem; }
@@ -479,12 +479,12 @@ main {
 
   &-eyebrow {
     font-family: $font-body;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: $color-sand;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   h1 {

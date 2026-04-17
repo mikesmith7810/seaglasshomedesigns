@@ -1955,6 +1955,7 @@ main {
     max-width: 280px;
     height: auto;
     opacity: 0.9;
+    mix-blend-mode: multiply;
   }
 
   @media (max-width: $bp-tablet) {

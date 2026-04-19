@@ -396,6 +396,7 @@ main {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   height: calc(100dvh - #{$header-height});
   min-height: 360px;
+  background: $color-teal;
 
   // Tablet widths: nav bar is hidden so header is logo bar only (280px)
   @media (max-width: $bp-tablet) and (min-width: #{$bp-mobile + 1}) {
@@ -610,6 +611,7 @@ main {
   @media (min-width: 1600px) { display: none; }
 
   background: $color-teal;
+  margin-top: -2px;
   padding: 56px 0;
 
   .stats-grid {

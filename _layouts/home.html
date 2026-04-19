@@ -35,9 +35,6 @@ layout: default
   <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
 </div>
 
-<div class="mobile-subtitle-pane">
-  <p>{{ page.subtitle }}</p>
-</div>
 
 {{ content }}
 
@@ -63,15 +60,9 @@ layout: default
 
 <section class="services">
   <div class="container">
-    <div class="services-intro">
-      <h2>Home Staging Services</h2>
-    </div>
-    <div class="services-grid services-grid--single">
-      <a class="services-card services-card--link" href="{{ '/home-staging/' | relative_url }}">
-        <h3>Home Staging</h3>
-        <p>Empty properties sit on the market longer and sell for less. Professional <strong>property staging</strong> — fully furnishing and styling your vacant home — helps buyers connect with the space immediately, reducing time on the market and securing a faster, stronger sale.</p>
-        <span class="services-card-cta">Find out more &rarr;</span>
-      </a>
+    <div class="services-statement">
+      <p>{{ page.subtitle }} Empty properties sit on the market longer and sell for less — professional <strong>property staging</strong>, fully furnishing and styling your vacant home, helps buyers connect with the space immediately, reducing time on the market and securing a faster, stronger sale.</p>
+      <a href="{{ '/home-staging/' | relative_url }}" class="services-statement-link">Find out more about home staging &rarr;</a>
     </div>
   </div>
 </section>

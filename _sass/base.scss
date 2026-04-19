@@ -574,9 +574,40 @@ main {
 }
 
 // ------------------------------------------------------------
+// HERO INLINE STATS — shown inside hero pane on large screens
+// ------------------------------------------------------------
+.hero-inline-stats {
+  display: none;
+
+  @media (min-width: 1600px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    .stat-number {
+      font-family: $font-heading;
+      font-size: clamp(2.6rem, 3.5vw, 4.2rem);
+      font-weight: 700;
+      color: $color-sand;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+      color: rgba(255,255,255,0.72);
+      line-height: 1.5;
+    }
+  }
+}
+
+// ------------------------------------------------------------
 // STATS BAND
 // ------------------------------------------------------------
 .stats-band {
+  @media (min-width: 1600px) { display: none; }
+
   background: $color-teal;
   padding: 56px 0;
 

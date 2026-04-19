@@ -13,6 +13,20 @@ layout: default
     <div class="hero-buttons" data-nosnippet>
       <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
     </div>
+    <div class="hero-inline-stats">
+      <div class="hero-inline-stat">
+        <div class="stat-number">10&times;</div>
+        <div class="stat-label">return on investment — staging pays for itself many times over*</div>
+      </div>
+      <div class="hero-inline-stat">
+        <div class="stat-number">3&times;</div>
+        <div class="stat-label">faster to sell — staged properties sell up to three times quicker*</div>
+      </div>
+      <div class="hero-inline-stat">
+        <div class="stat-number">8–10%</div>
+        <div class="stat-label">higher sale price — staged homes consistently achieve more than unstaged*</div>
+      </div>
+    </div>
   </div>
   <div class="hero-image"{% if page.hero_image %} style="background-image: url('{{ page.hero_image | relative_url }}')"{% endif %}></div>
 </section>

@@ -5,13 +5,18 @@ description: "Interior design and loft conversion styling for a 5-bedroom cottag
 location: "Weymouth, Dorset"
 date: 2026-03-01
 property_type: "5-bedroom Cottage"
-main_image: /assets/images/posts/nottington-loft/Samroom.jpg
+main_image: /assets/images/posts/nottington-loft/7b.png
 images:
    - /assets/images/posts/nottington-loft/Samroom.jpg
    - /assets/images/posts/nottington-loft/Samroom2.jpg
-#   - /assets/images/posts/brighton-terrace/kitchen.jpg
-#   - /assets/images/posts/brighton-terrace/bedroom.jpg
-#   - /assets/images/posts/brighton-terrace/garden.jpg
+   - /assets/images/posts/nottington-loft/3b.png
+   - /assets/images/posts/nottington-loft/4b.png
+   - /assets/images/posts/nottington-loft/6b.png
+   - /assets/images/posts/nottington-loft/7b.png
+   - /assets/images/posts/nottington-loft/8b.png
+   - /assets/images/posts/nottington-loft/9b.png
+   - /assets/images/posts/nottington-loft/10b.png
+   - /assets/images/posts/nottington-loft/11b.png
 ---
 
 This lovely 5-bedroom cottage in the hamlet of Nottington, Weymouth, Dorset underwent a full interior design transformation as part of a loft conversion project.

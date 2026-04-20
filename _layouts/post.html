@@ -43,21 +43,36 @@ layout: default
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
   <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
   <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8250;</button>
 </div>
 
 <script>
   const lightbox   = document.getElementById('lightbox');
   const lbImg      = document.getElementById('lightbox-img');
   const lbClose    = document.getElementById('lightbox-close');
+  const lbPrev     = document.getElementById('lightbox-prev');
+  const lbNext     = document.getElementById('lightbox-next');
+  const thumbs     = Array.from(document.querySelectorAll('.gallery-thumb'));
+  let currentIndex = 0;
 
-  document.querySelectorAll('.gallery-thumb').forEach(function(img) {
-    img.addEventListener('click', function() {
-      lbImg.src = this.src;
-      lbImg.alt = this.alt;
-      lightbox.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    });
+  function openLightbox(index) {
+    currentIndex = index;
+    lbImg.src = thumbs[currentIndex].src;
+    lbImg.alt = thumbs[currentIndex].alt;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    updateArrows();
+  }
+
+  function updateArrows() {
+    lbPrev.style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
+    lbNext.style.visibility = currentIndex < thumbs.length - 1 ? 'visible' : 'hidden';
+  }
+
+  thumbs.forEach(function(img, i) {
+    img.addEventListener('click', function() { openLightbox(i); });
   });
 
   function closeLightbox() {
@@ -66,12 +81,25 @@ layout: default
     lbImg.src = '';
   }
 
+  lbPrev.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (currentIndex > 0) openLightbox(currentIndex - 1);
+  });
+
+  lbNext.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (currentIndex < thumbs.length - 1) openLightbox(currentIndex + 1);
+  });
+
   lbClose.addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', function(e) {
     if (e.target === lightbox) closeLightbox();
   });
   document.addEventListener('keydown', function(e) {
+    if (!lightbox.classList.contains('is-open')) return;
     if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft' && currentIndex > 0) openLightbox(currentIndex - 1);
+    if (e.key === 'ArrowRight' && currentIndex < thumbs.length - 1) openLightbox(currentIndex + 1);
   });
 </script>
 {% endif %}

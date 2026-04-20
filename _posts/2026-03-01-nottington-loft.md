@@ -7,8 +7,6 @@ date: 2026-03-01
 property_type: "5-bedroom Cottage"
 main_image: /assets/images/posts/nottington-loft/7b.png
 images:
-   - /assets/images/posts/nottington-loft/Samroom.jpg
-   - /assets/images/posts/nottington-loft/Samroom2.jpg
    - /assets/images/posts/nottington-loft/3b.png
    - /assets/images/posts/nottington-loft/4b.png
    - /assets/images/posts/nottington-loft/6b.png

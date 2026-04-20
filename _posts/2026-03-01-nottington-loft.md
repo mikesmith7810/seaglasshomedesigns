@@ -7,14 +7,13 @@ date: 2026-03-01
 property_type: "5-bedroom Cottage"
 main_image: /assets/images/posts/nottington-loft/7b.png
 images:
-   - /assets/images/posts/nottington-loft/3b.png
-   - /assets/images/posts/nottington-loft/4b.png
-   - /assets/images/posts/nottington-loft/6b.png
-   - /assets/images/posts/nottington-loft/7b.png
-   - /assets/images/posts/nottington-loft/8b.png
-   - /assets/images/posts/nottington-loft/9b.png
-   - /assets/images/posts/nottington-loft/10b.png
-   - /assets/images/posts/nottington-loft/11b.png
+   - /assets/images/posts/nottington-loft/1c.jpeg
+   - /assets/images/posts/nottington-loft/2c.jpeg
+   - /assets/images/posts/nottington-loft/3c.jpeg
+   - /assets/images/posts/nottington-loft/4c.jpeg
+   - /assets/images/posts/nottington-loft/5c.jpeg
+   - /assets/images/posts/nottington-loft/6c.jpeg
+   - /assets/images/posts/nottington-loft/7c.jpeg
 ---
 
 This lovely 5-bedroom cottage in the hamlet of Nottington, Weymouth, Dorset underwent a full interior design transformation as part of a loft conversion project.

@@ -10,14 +10,20 @@ images:
    - /assets/images/posts/whiteshouse/Whitesnook.jpg
    - /assets/images/posts/whiteshouse/Whitesstaging.jpg
    - /assets/images/posts/whiteshouse/lounge.jpeg
+   - /assets/images/posts/whiteshouse/living2.jpeg
+   - /assets/images/posts/whiteshouse/mood1.jpeg
+   - /assets/images/posts/whiteshouse/mood2.jpeg
+   - /assets/images/posts/whiteshouse/mood3.jpeg
 ---
 
-This beautiful family home near Dorchester, Dorset, came to Sea Glass Home Designs for a full living room redesign.
+This beautiful family home near Dorchester, Dorset, came to Sea Glass Home Designs for a full living room and dining area redesign following structural changes.
 
-The existing layout wasn't making the most of the room's generous proportions and character features. By rethinking the furniture arrangement and sourcing new pieces suited to the space, the redesign opened up the room and created a much more inviting and functional living area.
+The family wanted to make the most of the new open plan layout's generous proportions whilst keeping a cohesive scheme and maximising the space. By rethinking the furniture arrangement and sourcing new pieces suited to the space, the redesign opened up the room and created a much more inviting and functional living area.
 
 The transformation is a great example of what considered interior design in Dorchester can achieve — unlocking a room's potential without structural changes, simply through thoughtful styling and the right furniture choices.
 
 **What we did:**
-- Full interior redesign
-- Furniture sourced
+- Concept and colour scheme development
+- Sourcing of furniture and furnishings
+- Spatial planning
+- Styling

@@ -12,7 +12,7 @@ Home staging is the art of preparing a property for sale by presenting it in its
 
 ## What Sea Glass Home Designs Offers
 
-Based in Dorset and serving clients across the region, Sea Glass Home Designs specialises in staging vacant properties, transforming them from a house to a vision of a home that buyers want to live in.
+Based in Dorset and serving clients across the region, Sea Glass Home Designs specialises in staging vacant properties for sale, transforming them from a house to a vision of a home that buyers want to live in.
 
 Our home staging and property styling services maximise buyer interest — from standout estate agent listings through to viewings that convert.
 

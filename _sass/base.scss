@@ -973,7 +973,8 @@ main {
     img {
       width: 100%;
       height: 260px;
-      object-fit: cover;
+      object-fit: contain;
+      background: $color-bg;
       border-radius: 3px;
       transition: opacity 0.2s;
 

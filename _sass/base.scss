@@ -8,7 +8,7 @@
 // ------------------------------------------------------------
 $color-aqua:       #9EC4C0;   // muted mint aqua  — top bar
 $color-sage:       #8FAD8C;   // sage green        — nav bar
-$color-sand:       #C4B45A;   // sandy yellow      — accents / CTA
+$color-sand:       #E8BC7A;   // warm orange       — accents / CTA
 $color-teal:       #3D6B6A;   // dark teal         — headings, footer
 $color-bg:         #F7F9F7;   // off-white         — page background
 $color-white:      #FFFFFF;
@@ -1077,7 +1077,7 @@ main {
   display: grid;
   grid-template-columns: 38% 62%;
   min-height: 600px;
-  background: $color-teal;
+  background: $color-bg;
 
   @media (max-width: $bp-mobile) {
     grid-template-columns: 1fr;
@@ -1122,23 +1122,23 @@ main {
     justify-content: center;
     padding: 40px 250px 40px 72px;
     overflow-y: auto;
-    color: $color-white;
+    color: $color-text;
 
     @media (max-width: $bp-mobile) {
       padding: 24px 28px 48px;
     }
 
-    p  { margin-bottom: 1.1rem; font-size: 1.02rem; color: rgba(255,255,255,0.88); }
-    strong { color: $color-white; }
+    p  { margin-bottom: 1.1rem; font-size: 1.02rem; color: $color-text; }
+    strong { color: $color-teal; }
     a { color: $color-sand; }
 
     .contact-details {
       margin-top: 2rem;
       padding: 20px 24px;
-      background: rgba(0,0,0,0.2);
+      background: $color-teal;
       border-radius: 3px;
 
-      p { margin-bottom: 6px; font-size: 0.95rem; }
+      p { margin-bottom: 6px; font-size: 0.95rem; color: rgba(255,255,255,0.88); }
       a { font-weight: 700; color: $color-sand; }
     }
   }

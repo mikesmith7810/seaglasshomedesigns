@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: "Projects"
+title: "Gallery"
 description: "A glimpse of the spaces we've brought to life."
 permalink: /portfolio/
 ---

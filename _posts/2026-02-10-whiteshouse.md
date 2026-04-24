@@ -20,7 +20,7 @@ This beautiful family home near Dorchester, Dorset, came to Sea Glass Home Desig
 
 The family wanted to make the most of the new open plan layout's generous proportions whilst keeping a cohesive scheme and maximising the space. By rethinking the furniture arrangement and sourcing new pieces suited to the space, the redesign opened up the room and created a much more inviting and functional living area.
 
-The transformation is a great example of what considered interior design in Dorchester can achieve — unlocking a room's potential without structural changes, simply through thoughtful styling and the right furniture choices.
+The transformation is a great example of what considered interior design and styling can achieve — unlocking a room's potential through thoughtful spatial planning and styling and the right furniture choices.
 
 **What we did:**
 - Concept and colour scheme development

@@ -16,17 +16,18 @@ Based in Dorset and serving clients across the region, Sea Glass Home Designs sp
 
 Our home staging and property styling services maximise buyer interest — from standout estate agent listings through to viewings that convert.
 
-A lot of thought and planning goes into home staging — careful consideration is given to the optimal layout and function of each space, and to developing a cohesive scheme with inviting colours and furnishings that appeal to viewers. Each property receives this detailed, design-led approach to achieve its best presentation and ultimately a quicker sale.
-
 We work with:
 
-- Homeowners preparing vacant properties for sale
+- Property developers wishing to move vacant stock quickly and at the best possible price
+- Property investors wanting to reduce their holding costs and secure faster, stronger offers
 - Estate agents looking to maximise listing appeal, increase viewings and achieve stronger sales
-- Property developers wanting to move vacant stock quickly and at the best possible price
+- Homeowners preparing vacant properties for sale
 
 ## Why Choose Sea Glass Home Designs?
 
-We work with you to deliver a market-ready look that appeals to your target market, aiming to achieve a quicker sale at the best possible price.
+We work with you to deliver a market-ready look that appeals to your target market, tells a story they connect with, aiming to achieve a quicker sale at the best possible price.
+
+A lot of thought and planning goes into home staging — careful consideration is given to the optimal layout and function of each space, and to developing a cohesive scheme with inviting colours and furnishings that appeal to viewers and make them feel at home. Each property receives this detailed, design-led approach to achieve its best presentation and ultimately a quicker sale.
 
 - Interior design expertise
 - Founder-led service

@@ -26,7 +26,6 @@ The result speaks for itself — the interior redesign added 20% to the value of
 - Full interior redesign
 - Concept and colour scheme development
 - Furniture sourced
-- Colour scheme development
 - Sourcing of furniture and furnishings
 - Lighting design
 - Styling

@@ -1145,6 +1145,91 @@ main {
 }
 
 // ------------------------------------------------------------
+// ABOUT VALUES (second row of .about-content grid)
+// ------------------------------------------------------------
+.about-values-label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 64px 40px 64px 0;
+
+  @media (max-width: $bp-mobile) {
+    padding: 40px 28px 24px;
+    justify-content: flex-start;
+    border-top: 1px solid $color-border;
+  }
+}
+
+.about-values-label-inner {
+  width: 50%;
+  text-align: center;
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+    color: $color-teal;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: $color-text-muted;
+  }
+
+  @media (max-width: $bp-mobile) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.about-values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 64px 250px 64px 72px;
+
+  @media (max-width: $bp-mobile) {
+    padding: 24px 28px 48px;
+  }
+}
+
+.about-value {
+  background: $color-white;
+  border-radius: 4px;
+  padding: 32px 28px 36px;
+  border-top: 4px solid $color-sand;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+
+  &-num {
+    display: block;
+    font-family: $font-heading;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: $color-sand;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-family: $font-heading;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-teal;
+    margin-bottom: 14px;
+  }
+
+  p {
+    color: $color-text;
+    font-size: 1.35rem;
+    line-height: 1.75;
+    margin: 0;
+  }
+}
+
+// ------------------------------------------------------------
 // REVIEWS
 // ------------------------------------------------------------
 .reviews {

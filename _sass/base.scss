@@ -1171,30 +1171,9 @@ main {
   justify-content: flex-end;
   align-items: center;
   padding: 64px 40px 64px 0;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 64px;
-    left: calc(50% - 40px);
-    width: 50%;
-    height: calc(100% - 128px);
-    background: url('/assets/images/logos/borderleft2.png') top left / auto 100% no-repeat;
-    opacity: 0.7;
-    pointer-events: none;
-  }
-
   @media (max-width: $bp-mobile) {
     padding: 40px 28px 24px;
     justify-content: flex-start;
-
-    &::before {
-      left: 28px;
-      top: 0;
-      height: 100%;
-    }
   }
 }
 

@@ -1,6 +1,6 @@
 ---
 layout: homestaging
-title: "Home Staging Services — Dorset"
+title: "Home Staging Services"
 description: "Professional home staging in Dorset and surrounding areas. Staged homes sell up to 3× faster and for 8–10% more. Find out why it works."
 permalink: /home-staging/
 subtitle: "Helping sellers achieve faster sales at the best possible price."

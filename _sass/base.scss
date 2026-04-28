@@ -7,6 +7,22 @@
 // CUSTOM FONTS
 // ------------------------------------------------------------
 @font-face {
+  font-family: 'Amsterdam One';
+  src: url('/assets/fonts/amsterdam-one/AmsterdamOne-eZ12l.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Buffalo';
+  src: url('/assets/fonts/buffalo/BuffaloDemoVersionRegular-axZ1R.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
   font-family: 'Safira March';
   src: url('/assets/fonts/Safira-March-Light.otf') format('opentype');
   font-weight: normal;
@@ -37,6 +53,7 @@ $color-border:     #D5E0DE;   // subtle dividers
 
 $font-heading: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 $font-body:    'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-script:  'Buffalo', cursive;
 
 // Header heights — 2-bar layout (logo + nav)
 $header-logo:   180px;   // white logo bar
@@ -769,7 +786,7 @@ main {
     max-width: 560px;
     margin: 0 auto 48px;
 
-    h2 { font-size: 2rem; margin-bottom: 0.6rem; }
+    h2 { font-family: $font-script; font-size: 3.4rem; font-weight: 400; margin-bottom: 0.6rem; }
     p  { color: $color-text-muted; font-size: 1.05rem; }
   }
 }
@@ -805,7 +822,7 @@ main {
   padding: 80px 0;
   text-align: center;
 
-  h2 { color: $color-white; font-size: 1.8rem; margin-bottom: 0.5rem; }
+  h2 { font-family: $font-script; color: $color-white; font-size: 3.4rem; font-weight: 400; margin-bottom: 0.5rem; }
   p  { color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; font-size: 1.05rem; }
 
   .phone-link {
@@ -1184,8 +1201,8 @@ main {
   z-index: 1;
 
   h2 {
-    font-family: $font-heading;
-    font-size: 2.4rem;
+    font-family: $font-script;
+    font-size: 4.2rem;
     color: $color-teal;
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -1264,7 +1281,9 @@ main {
 
   h2 {
     text-align: center;
-    font-size: 2rem;
+    font-family: $font-script;
+    font-size: 3.4rem;
+    font-weight: 400;
     margin-bottom: 48px;
   }
 }
@@ -1496,8 +1515,8 @@ main {
 
   .form-submit {
     align-self: flex-start;
-    background: $color-teal;
-    color: $color-white;
+    background: $color-sand;
+    color: $color-teal;
     border: none;
     padding: 14px 36px;
     font-family: $font-body;
@@ -1518,7 +1537,8 @@ main {
 
 .contact-details-wrap {
   h3 {
-    font-size: 1.4rem;
+    font-family: $font-script;
+    font-size: 2.8rem;
     margin-bottom: 0.75rem;
   }
 

@@ -24,7 +24,8 @@
       "Bash(brew install:*)",
       "Bash(ls:*)",
       "Bash(magick:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(unzip:*)"
     ]
   }
 }

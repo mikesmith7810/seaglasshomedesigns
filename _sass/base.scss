@@ -1640,6 +1640,7 @@ main {
   @media (max-width: $bp-tablet) {
     position: static;
     height: 360px;
+    order: -1;
   }
 
   img {
@@ -1881,6 +1882,23 @@ main {
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+}
+
+.hs-mobile-photo {
+  display: none;
+
+  @media (max-width: $bp-tablet) {
+    display: block;
+    height: 360px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
   }
 }
 

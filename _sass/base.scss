@@ -346,7 +346,7 @@ main {
   align-items: center;
   justify-content: flex-end;
   padding: 18px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 }
 
@@ -359,12 +359,12 @@ main {
   border-radius: 3px;
   transition: background 0.2s;
 
-  &:hover { background: rgba(255, 255, 255, 0.12); }
+  &:hover { background: rgba(0, 0, 0, 0.06); }
 
   svg {
     width: 22px;
     height: 22px;
-    stroke: $color-white;
+    stroke: $color-teal;
   }
 }
 
@@ -375,19 +375,19 @@ main {
   flex: 1;
 
   a {
-    color: $color-white;
+    color: $color-teal;
     font-size: 0.95rem;
     font-weight: 700;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     padding: 18px 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     transition: background 0.2s;
 
     &:hover,
     &.active {
-      background: rgba(255, 255, 255, 0.1);
-      color: $color-white;
+      background: rgba(0, 0, 0, 0.06);
+      color: $color-teal;
     }
 
     &:last-child { border-bottom: none; }
@@ -396,12 +396,12 @@ main {
 
 .drawer-footer {
   padding: 24px 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 
   .drawer-phone {
     display: block;
-    color: $color-white;
+    color: $color-teal;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.03em;
@@ -422,11 +422,11 @@ main {
       svg {
         width: 20px;
         height: 20px;
-        fill: rgba(255, 255, 255, 0.75);
+        fill: $color-teal;
         transition: fill 0.2s;
       }
 
-      &:hover svg { fill: $color-white; }
+      &:hover svg { fill: $color-teal; }
     }
   }
 }

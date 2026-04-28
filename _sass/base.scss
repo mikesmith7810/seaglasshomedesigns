@@ -41,8 +41,8 @@
 // ------------------------------------------------------------
 // VARIABLES
 // ------------------------------------------------------------
-$color-aqua:       #9EC4C0;   // muted mint aqua  — top bar
-$color-sage:       #8FAD8C;   // sage green        — nav bar
+$color-aqua:       #9EC4C0;   // muted mint aqua  — accents
+$color-sage:       #BFD7CB;   // nav bar
 $color-sand:       #E8BC7A;   // warm orange       — accents / CTA
 $color-teal:       #3D6B6A;   // dark teal         — headings, footer
 $color-bg:         #F7F9F7;   // off-white         — page background
@@ -220,8 +220,8 @@ main {
 
   // Shared link style
   a {
-    color: $color-white;
-    font-size: 0.88rem;
+    color: $color-teal;
+    font-size: 1.08rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -232,7 +232,7 @@ main {
 
     &:hover,
     &.active {
-      color: $color-white;
+      color: $color-teal;
       border-bottom-color: $color-sand;
     }
   }
@@ -270,7 +270,7 @@ main {
       svg {
         width: 18px;
         height: 18px;
-        fill: $color-white;
+        fill: $color-teal;
         transition: opacity 0.2s;
       }
 

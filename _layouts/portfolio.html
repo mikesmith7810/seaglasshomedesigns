@@ -10,34 +10,41 @@ layout: default
 </div>
 
 <div class="container">
-  {% if site.posts.size > 0 %}
-  <div class="portfolio-grid">
-    {% for post in site.posts %}
-    <article class="portfolio-card">
-      <a href="{{ post.url | relative_url }}">
-        <div class="portfolio-card-image {% unless post.main_image %}no-image{% endunless %}">
-          {% if post.main_image %}
-            <img src="{{ post.main_image | relative_url }}" alt="{{ post.title }}">
-          {% else %}
-            <span>&#127968;</span>
-          {% endif %}
+  <div class="gallery-grid">
+    {% assign pinned = "/assets/images/gallery/IMG_4310.jpeg" %}
+    <div class="gallery-item" onclick="openLightbox('{{ pinned | relative_url }}')">
+      <img src="{{ pinned | relative_url }}" alt="Sea Glass Home Designs — staging and styling">
+    </div>
+    {% assign gallery_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/gallery/'" %}
+    {% for image in gallery_images %}
+      {% assign ext = image.extname | downcase %}
+      {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" %}
+        {% unless image.path contains "IMG_4310" %}
+        <div class="gallery-item" onclick="openLightbox('{{ image.path | relative_url }}')">
+          <img src="{{ image.path | relative_url }}" alt="Sea Glass Home Designs — staging and styling">
         </div>
-        <div class="portfolio-card-body">
-          <h2>{{ post.title }}</h2>
-          <div class="card-meta">
-            {% if post.location %}<span>{{ post.location }}</span>{% endif %}
-            <span>{{ post.date | date: "%B %Y" }}</span>
-            {% if post.property_type %}<span>{{ post.property_type }}</span>{% endif %}
-          </div>
-          <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-        </div>
-      </a>
-    </article>
+        {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
-  {% else %}
-  <div class="empty-state">
-    <p>Gallery coming soon.</p>
-  </div>
-  {% endif %}
 </div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>

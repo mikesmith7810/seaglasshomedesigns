@@ -91,39 +91,76 @@ layout: default
   </div>
 </section>
 
-<section class="portfolio-preview">
+<section class="brochure-preview">
   <div class="container">
     <div class="section-intro">
-      <h2>Gallery</h2>
+      <h2>Our Brochure</h2>
+      <p>Find out more about what we do and how we can help you sell your property.</p>
     </div>
-    <div class="portfolio-grid">
-      {% for post in site.posts limit:3 %}
-      <article class="portfolio-card">
-        <a href="{{ post.url | relative_url }}">
-          <div class="portfolio-card-image {% unless post.main_image %}no-image{% endunless %}">
-            {% if post.main_image %}
-              <img src="{{ post.main_image | relative_url }}" alt="{{ post.title }}">
-            {% else %}
-              <span>&#127968;</span>
-            {% endif %}
-          </div>
-          <div class="portfolio-card-body">
-            <h3>{{ post.title }}</h3>
-            <div class="card-meta">
-              {% if post.location %}<span>{{ post.location }}</span>{% endif %}
-              <span>{{ post.date | date: "%B %Y" }}</span>
-            </div>
-            <p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
-          </div>
-        </a>
-      </article>
-      {% endfor %}
+    <div class="brochure-inner">
+      <div class="brochure-pages" id="brochure-pages">
+        <div class="brochure-page" onclick="openBrochureLightbox(1)"><canvas id="brochure-p1"></canvas></div>
+        <div class="brochure-page" onclick="openBrochureLightbox(2)"><canvas id="brochure-p2"></canvas></div>
+        <div class="brochure-page" onclick="openBrochureLightbox(3)"><canvas id="brochure-p3"></canvas></div>
+        <div class="brochure-page" onclick="openBrochureLightbox(4)"><canvas id="brochure-p4"></canvas></div>
+      </div>
+      <div class="brochure-cta">
+        <a href="{{ '/assets/brochure/FinalBrochureA4.pdf' | relative_url }}" class="btn-outline" target="_blank" rel="noopener">View Full Brochure PDF</a>
+      </div>
     </div>
-    {% if site.posts.size > 0 %}
-    <div class="view-all">
-      <a href="{{ '/portfolio/' | relative_url }}" class="btn-outline">View the gallery</a>
-    </div>
-    {% endif %}
+
+<div class="lightbox" id="brochure-lightbox" onclick="closeBrochureLightbox()">
+  <button class="lightbox-close" onclick="closeBrochureLightbox()">&times;</button>
+  <canvas id="brochure-lightbox-canvas" onclick="event.stopPropagation()"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+  var brochurePdf;
+
+  pdfjsLib.getDocument('{{ "/assets/brochure/FinalBrochureA4.pdf" | relative_url }}').promise.then(function(pdf) {
+    brochurePdf = pdf;
+    [1, 2, 3, 4].forEach(function(pageNum) {
+      pdf.getPage(pageNum).then(function(page) {
+        var canvas = document.getElementById('brochure-p' + pageNum);
+        var container = canvas.parentElement;
+        var scale = container.offsetWidth / page.getViewport({ scale: 1 }).width;
+        var viewport = page.getViewport({ scale: scale });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });
+      });
+    });
+  });
+
+  function openBrochureLightbox(pageNum) {
+    var lightbox = document.getElementById('brochure-lightbox');
+    var canvas = document.getElementById('brochure-lightbox-canvas');
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    brochurePdf.getPage(pageNum).then(function(page) {
+      var maxW = window.innerWidth * 0.88;
+      var maxH = window.innerHeight * 0.88;
+      var nativeVp = page.getViewport({ scale: 1 });
+      var scale = Math.min(maxW / nativeVp.width, maxH / nativeVp.height);
+      var viewport = page.getViewport({ scale: scale });
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });
+    });
+  }
+
+  function closeBrochureLightbox() {
+    document.getElementById('brochure-lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeBrochureLightbox();
+  });
+</script>
   </div>
 </section>
 

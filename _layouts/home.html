@@ -120,17 +120,19 @@ layout: default
 
   var brochurePdf;
 
-  pdfjsLib.getDocument('{{ "/assets/brochure/FinalBrochureA4.pdf" | relative_url }}').promise.then(function(pdf) {
-    brochurePdf = pdf;
-    [1, 2, 3, 4].forEach(function(pageNum) {
-      pdf.getPage(pageNum).then(function(page) {
-        var canvas = document.getElementById('brochure-p' + pageNum);
-        var container = canvas.parentElement;
-        var scale = container.offsetWidth / page.getViewport({ scale: 1 }).width;
-        var viewport = page.getViewport({ scale: scale });
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-        page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });
+  window.addEventListener('load', function() {
+    pdfjsLib.getDocument('{{ "/assets/brochure/FinalBrochureA4.pdf" | relative_url }}').promise.then(function(pdf) {
+      brochurePdf = pdf;
+      [1, 2, 3, 4].forEach(function(pageNum) {
+        pdf.getPage(pageNum).then(function(page) {
+          var canvas = document.getElementById('brochure-p' + pageNum);
+          var container = canvas.parentElement;
+          var scale = container.offsetWidth / page.getViewport({ scale: 1 }).width;
+          var viewport = page.getViewport({ scale: scale });
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });
+        });
       });
     });
   });

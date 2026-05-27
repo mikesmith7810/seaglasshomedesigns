@@ -24,7 +24,16 @@
     <div class="nav-left">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
       <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
-      <a href="{{ '/home-staging/' | relative_url }}" {% if page.url contains '/home-staging' %}class="active"{% endif %}>Home Staging</a>
+      <div class="nav-dropdown">
+        <a href="{{ '/home-staging/' | relative_url }}" {% if page.url contains '/home-staging' or page.url contains '/vacant-property-staging' or page.url contains '/walk-and-talk' or page.url contains '/photoshoot-preparation' or page.url contains '/open-day-presentation' %}class="active"{% endif %}>Our Services</a>
+        <div class="nav-dropdown-menu">
+          <a href="{{ '/vacant-property-staging/' | relative_url }}">Vacant Property Staging</a>
+          <a href="{{ '/walk-and-talk/' | relative_url }}">Staging Consultation & Advice</a>
+          <a href="{{ '/photoshoot-preparation/' | relative_url }}">Photoshoot Preparation</a>
+          <a href="{{ '/open-day-presentation/' | relative_url }}">Open Day Presentation</a>
+        </div>
+      </div>
+      <a href="{{ '/pricing/' | relative_url }}" {% if page.url contains '/pricing' %}class="active"{% endif %}>Pricing</a>
       <a href="{{ '/portfolio/' | relative_url }}" {% if page.url contains '/portfolio' %}class="active"{% endif %}>Gallery</a>
       <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}class="active"{% endif %}>Contact</a>
     </div>
@@ -65,7 +74,14 @@
     <nav class="drawer-nav">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
       <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
-      <a href="{{ '/home-staging/' | relative_url }}" {% if page.url contains '/home-staging' %}class="active"{% endif %}>Home Staging</a>
+      <a href="{{ '/home-staging/' | relative_url }}" {% if page.url contains '/home-staging' or page.url contains '/vacant-property-staging' or page.url contains '/walk-and-talk' or page.url contains '/photoshoot-preparation' or page.url contains '/open-day-presentation' %}class="active"{% endif %}>Our Services</a>
+      <div class="drawer-sub-nav">
+        <a href="{{ '/vacant-property-staging/' | relative_url }}">Vacant Property Staging</a>
+        <a href="{{ '/walk-and-talk/' | relative_url }}">Staging Consultation & Advice</a>
+        <a href="{{ '/photoshoot-preparation/' | relative_url }}">Photoshoot Preparation</a>
+        <a href="{{ '/open-day-presentation/' | relative_url }}">Open Day Presentation</a>
+      </div>
+      <a href="{{ '/pricing/' | relative_url }}" {% if page.url contains '/pricing' %}class="active"{% endif %}>Pricing</a>
       <a href="{{ '/portfolio/' | relative_url }}" {% if page.url contains '/portfolio' %}class="active"{% endif %}>Gallery</a>
       <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}class="active"{% endif %}>Contact</a>
     </nav>

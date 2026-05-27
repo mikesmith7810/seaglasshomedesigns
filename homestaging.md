@@ -1,10 +1,10 @@
 ---
 layout: homestaging
-title: "Home Staging Services"
+title: "Services"
 description: "Professional home staging in Dorset and surrounding areas. Staged homes sell up to 3× faster and for 8–10% more. Find out why it works."
 permalink: /home-staging/
 subtitle: "Helping sellers achieve faster sales at the best possible price."
-photo_1: /assets/images/hero/Scandilounge.jpg
+photo_1: /assets/images/genimage/kitchen3.png
 ---
 
 ## Elevate Your Property's Potential with Sea Glass Home Designs
@@ -19,7 +19,7 @@ We deliver bespoke staging and property styling that maximises buyer interest fr
 
 - **Property Developers & Investors** — Moving stock quickly to reduce holding costs and secure a high ROI.
 - **Estate Agents** — Elevating listing appeal to drive viewings and achieve stronger sales.
-- **Homeowners** — Preparing unfurnished properties for a competitive and successful market debut.
+- **Homeowners** — Preparing your home for a competitive and successful market presence.
 
 ## The Sea Glass Advantage
 

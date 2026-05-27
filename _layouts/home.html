@@ -11,7 +11,7 @@ layout: default
     </h1>
     <p class="hero-subtitle">{{ page.subtitle | default: "Expert home staging and styling services to help your property sell faster and for more." }}</p>
     <div class="hero-buttons" data-nosnippet>
-      <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
+      <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary hero-btn--phone">Call {{ site.phone }}</a>
     </div>
     <div class="hero-inline-stats">
       <div class="hero-inline-stat">
@@ -32,7 +32,7 @@ layout: default
 </section>
 
 <div class="mobile-hero-cta">
-  <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary">Call {{ site.phone }}</a>
+  <a href="tel:{{ site.phone | remove: ' ' }}" class="hero-btn hero-btn--primary hero-btn--phone">Call {{ site.phone }}</a>
 </div>
 
 
@@ -58,12 +58,93 @@ layout: default
   </div>
 </section>
 
-<section class="services">
-  <div class="container">
-    <div class="services-statement">
-      <p><span class="mobile-only">{{ page.subtitle }} </span>Unfurnished properties sit on the market longer and sell for less — professional <strong>property staging</strong>, fully furnishing and styling your vacant home, helps buyers connect with the space immediately, reducing time on the market and securing a faster, stronger sale.</p>
-      <a href="{{ '/home-staging/' | relative_url }}" class="services-statement-link">Find out more about home staging &rarr;</a>
+
+<section class="hs-intro">
+  <div class="hs-intro-grid">
+    <div class="hs-intro-text">
+      <h2>Elevate Your Property's Potential with Sea Glass Home Designs</h2>
+      <p>Sea Glass Home Designs is a property staging company based in the South West of England, focusing on enhancing property appeal ready for sale.</p>
+      <p>Our staging solutions provide a high-impact marketing service designed to sell your property faster and for the best possible price.</p>
+      <p>Specialising in staging properties across Dorset and the surrounding areas, we transform spaces into aspirational homes. By thoughtfully styling each space with curated furniture and decor, we remove the guesswork for buyers — showcasing scale, purpose, and a lifestyle they can instantly envision as their own.</p>
+      <h2>Our Clients</h2>
+      <p>We deliver bespoke staging and property styling that maximises buyer interest from the very first click. Our goal is to ensure your listing stands out online and converts viewings into offers. We are proud to partner with:</p>
+      <ul>
+        <li><strong>Property Developers &amp; Investors</strong> — Moving stock quickly to reduce holding costs and secure a high ROI.</li>
+        <li><strong>Estate Agents</strong> — Elevating listing appeal to drive viewings and achieve stronger sales.</li>
+        <li><strong>Homeowners</strong> — Preparing your home for a competitive and successful market presence.</li>
+      </ul>
+      <p>Every property receives a design-led, strategic approach, delivering a cohesive, tailored scheme that speaks directly to your target buyer's emotions.</p>
     </div>
+    <div class="hs-intro-photo">
+      <img src="{{ '/assets/images/hero/Scandilounge.jpg' | relative_url }}" alt="Home staging example">
+    </div>
+  </div>
+  <h2 class="hs-services-heading">Our Services</h2>
+  <div class="hs-services-grid-wrap">
+    <a href="{{ '/vacant-property-staging/' | relative_url }}" class="hs-service-card">
+      <h4>Vacant Property Staging</h4>
+      <p>We transform unfurnished properties into aspirational homes — helping buyers connect with the space immediately, reducing time on the market and securing a faster, stronger sale.</p>
+      <span>Find Out More &rarr;</span>
+    </a>
+    <a href="{{ '/walk-and-talk/' | relative_url }}" class="hs-service-card">
+      <h4>Staging Consultation & Advice</h4>
+      <p>A guided walkthrough of your property with expert staging advice — practical, actionable recommendations on layout, styling and presentation to help you make the most of what you already have.</p>
+      <span>Find Out More &rarr;</span>
+    </a>
+    <a href="{{ '/photoshoot-preparation/' | relative_url }}" class="hs-service-card">
+      <h4>Photoshoot Preparation</h4>
+      <p>First impressions start online. We prepare your property for photography — styling each room to look its absolute best in images, ensuring your listing stands out and attracts more viewings from the very first click.</p>
+      <span>Find Out More &rarr;</span>
+    </a>
+    <a href="{{ '/open-day-presentation/' | relative_url }}" class="hs-service-card">
+      <h4>Open Day Presentation</h4>
+      <p>Make the best possible impression on the day it matters most. We style and present your property for open house viewings — creating an atmosphere that helps buyers envision themselves at home and encourages offers.</p>
+      <span>Find Out More &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<section class="hs-stats">
+  <div class="hs-stats-grid">
+
+    <div class="hs-stats-photo">
+      <img src="{{ '/assets/images/posts/whiteshouse/Whitesstaging.jpg' | relative_url }}" alt="Staged home interior">
+    </div>
+
+    <div class="hs-stats-content">
+      <div class="hs-stat-block">
+        <h2>1. The Impact on Sale Price</h2>
+        <p class="hs-stat-intro">Is it worth the money? The evidence says yes.</p>
+        <ul class="hs-fact-list">
+          <li><strong>A strong return on investment</strong> — Every £1,000 spent on staging can return up to £10,000 in the final sale price, according to industry surveys from the Home Staging Association UK.</li>
+          <li><strong>Sell for more</strong> — Staged homes consistently achieve higher sale prices — typically up to 10% more than unstaged properties. On a £300,000 home, that could mean tens of thousands of pounds more.</li>
+          <li><strong>An affordable investment</strong> — Staging costs a small fraction of a property's guide price, making it one of the most cost-effective things you can do before going to market.</li>
+          <li><strong>Avoid costly price reductions</strong> — Unstaged properties that sit on the market often face price reductions. Professional staging before listing can help you avoid that conversation entirely.</li>
+        </ul>
+      </div>
+
+      <div class="hs-stat-block">
+        <h2>2. The Impact on Time on Market</h2>
+        <p class="hs-stat-intro">Staging reduces the disruption of prolonged listings and helps sellers move on sooner.</p>
+        <ul class="hs-fact-list">
+          <li><strong>Sell significantly faster</strong> — Staged properties can sell up to three times faster than unstaged ones, according to research from the Home Staging Association UK.</li>
+          <li><strong>Reduce the carrying costs</strong> — Every extra week a property sits unsold costs money — mortgage payments, utilities, council tax. Less time on the market means real savings adding up.</li>
+        </ul>
+      </div>
+
+      <div class="hs-stat-block">
+        <h2>3. The Psychology of the Buyer</h2>
+        <p class="hs-stat-intro">This is why staging works — bridging the gap between a house and a home.</p>
+        <ul class="hs-fact-list">
+          <li><strong>Buyers can picture themselves at home</strong> — The majority of buyers' agents say that staging makes it easier for clients to envision a property as their future home, particularly in empty spaces.</li>
+          <li><strong>Stand out online and attract more viewings</strong> — Your first showing is online. A staged home stands out in search results, attracts more views and converts significantly more browsers into viewers.</li>
+          <li><strong>Buyers stay longer at viewings</strong> — Most buyers spend more time in a staged home, giving them the space to connect emotionally and make a decision.</li>
+        </ul>
+      </div>
+
+      <p class="hs-disclaimer-inline">* Based on average data from the National Association of REALTORS&reg; (NAR) and the Home Staging Association (HSA) UK. Actual results vary by property and current market conditions.</p>
+    </div>
+
   </div>
 </section>
 

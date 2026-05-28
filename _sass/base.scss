@@ -2560,6 +2560,14 @@ main {
     margin-bottom: 1rem;
   }
 
+  .pc-prereq {
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid $color-border;
+  }
+
   .pc-cost-note {
     font-size: 0.875rem;
     color: $color-text-muted;

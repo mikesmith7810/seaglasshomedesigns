@@ -12,7 +12,7 @@ page_intro: |
 
   Professional staging transforms that experience completely, showing potential buyers exactly how to use the space and eliminating any doubts or questions in their mind. Buyers stay longer in a furnished property as they have more to look at and start imagining their life there.
 
-  We bring in furniture, lighting, accessories and artwork to create an aspirational home that buyers can immediately connect with and respond to emotionally.
+  We bring in furniture, soft furnishings, lighting, accessories and artwork to create an aspirational home that buyers can immediately connect with and respond to emotionally.
 
   Whether you are a homeowner, developer or estate agent wanting to showcase your property's best features and potential, we work with you to transform your vacant house into a must-have home.
 ---
